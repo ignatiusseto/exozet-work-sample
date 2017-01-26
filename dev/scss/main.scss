@@ -9,17 +9,62 @@
 body {
   background-color: white;
   color: black;
-  a{
-    color: green;
-  }
+}
+
+.footer-links{
+  color: green;
 }
 
 body, button {
   font-family: $body-font;
 }
 
-q {
+h2{
+  font-weight: bold;
+  font-size: 24pt;
+}
+
+p.quote {
   font-family: $quote-font;
   font-weight: bold;
   font-style: italic;
+}
+
+button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  color: $button-text-color;
+  background-color: $button-color;
+}
+
+.date {
+  color: $date-color;
+}
+
+.exozet-footer {
+  float: left;
+}
+
+.right-element {
+  float: right;
+}
+
+.done{
+  clear: both;
+}
+
+.alert {
+  color: $alert-text-color;
+  font-family: $alert-font;
+  text-decoration: none;
+}
+
+input, textarea{
+  width:100%;
+  border-radius: 3px;
+}
+
+.text-right {
+  text-align: right;
 }

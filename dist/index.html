@@ -10,23 +10,28 @@
 
 <body>
 <!-- TODO: navigation pane -->
-<nav>
-    <p>exozet <span><button>NEWS</button> <button>KONTAKT</button> <button>IMPRESSUM</button><i class="fa fa-bolt" aria-hidden="true"></i></span></p>
+<nav class="wrapper">
+    <div class="row">
+        <div class="column-12">
+            exozet<span class="right-element"><a href="#">NEWS</a> <a href="#">KONTAKT</a> <a
+                href="#">IMPRESSUM</a></span>
+        </div>
+    </div>
 </nav>
 <hr>
 <!-- Main content -->
 <section class="wrapper">
     <div class="row">
         <div class="column-12">
-            <p>20.02.2012 | 19:02 Uhr</p>
+            <span class="date">20.02.2012 | 19:02 Uhr</span>
         </div>
     </div>
     <div class="row">
         <!-- left column -->
-        <section class="column-9">
-            <h2>Long Headlinetext /</h2>
-            <br>
-            <article>
+
+        <article class="column-9">
+            <h2>LONG HEADLINETEXT /</h2>
+            <section>
                 <p>
                     Es gibt im Moment in diese Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich
                     lese
@@ -38,9 +43,30 @@
                     vergessen Zickler. Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese Wörter, ist
                     möglich verstehen, was ich hab gesagt? Danke.</p>
                 <br>
-                <q>„Ein Trainer ist nicht ein Idiot! Ein Trainer sei sehen was passieren in Platz.“ –
-                    Trapattoni ’98
-                </q>
+                <div class="row">
+                    <div class="column-3"></div>
+                    <div class="column-6">
+                        <hr>
+                    </div>
+                    <div class="column-3"></div>
+                </div>
+                <div class="row">
+                    <div class="column-2"></div>
+                    <div class="column-8">
+                        <p class="quote">„Ein Trainer ist nicht ein Idiot! Ein Trainer sei sehen was passieren in
+                            Platz.“ –
+                            Trapattoni ’98
+                        </p>
+                    </div>
+                    <div class="column-2"></div>
+                </div>
+                <div class="row">
+                    <div class="column-3"></div>
+                    <div class="column-6">
+                        <hr>
+                    </div>
+                    <div class="column-3"></div>
+                </div>
                 <br><br>
                 <p>Offensiv, offensiv ist wie machen wir in Platz. Zweitens: ich habe erklärt mit diese zwei Spieler:
                     nach
@@ -60,31 +86,56 @@
                     Platz. Zweitens: ich habe erklärt mit diese zwei Spieler: nach Dortmund brauchen vielleicht Halbzeit
                     Pause. Ich habe auch andere Mannschaften gesehen in Europa nach diese Mittwoch.
                 </p>
-            </article>
+            </section>
             <br>
-            <h2>Formular /</h2>
+            <h2>FORMULAR /</h2>
             <hr>
             <br>
-            <p>Felder mit einem * sind Pflichtfelder</p>
-            <a href="#">Fehlermeldung</a>
+            <div class="row">
+                <div class="column-3"></div>
+                <div class="column-6">
+                    <p>Felder mit einem * sind Pflichtfelder.</p>
+                    <a href="#" class="alert">Fehlermeldung</a>
+                </div>
+                <div class="column-3"></div>
+            </div>
             <form>
-                <label>Name* </label><input type="text"><br>
-                <label>E-Mail* </label><input type="email"><br>
-                <label>Telefon </label><input type="tel"><br>
-                <label>Kommentar* </label><textarea></textarea><br>
-                <button type="submit">Abschicken</button>
+                <div class="row">
+                    <div class="column-3 text-right">
+                        <label>Name* </label><br><br>
+                        <label>E-Mail* </label><br><br>
+                        <label>Telefon </label><br><br>
+                        <label>Kommentar* </label><br><br>
+                    </div>
+                    <div class="column-5">
+                        <input type="text"><br><br>
+                        <input type="email"><br><br>
+                        <input type="tel"><br><br>
+                        <textarea></textarea><br><br>
+                        <button type="submit" class="right-element">Abschicken</button>
+                    </div>
+                </div>
             </form>
             <br>
-            <h2>Leistungsumfang /</h2>
+            <h2>LEISTUNGSUMFANG /</h2>
             <hr>
             <!-- todo: split this to left and right -->
             <div class="row">
-                <p class="column-8">1. Lorem</p><span class="column-4">Exozet: GmbH</span>
-                <p class="column-8">2. Ipsum</p><span class="column-4">Mitarbeiter: ca.150</span>
-                <p class="column-8">3. Dolor</p><span class="column-4">Groups: Games, Interact, Effects</span>
-                <p class="column-8">4. Sit</p><span class="column-4">Gr&uuml;ndung</span>
+                <div class="column-5    ">
+                    <p>1. Lorem</p>
+                    <p>2. Ipsum</p>
+                    <p>3. Dolor</p>
+                    <p>4. Sit</p>
+                </div>
+                <div class="column-4">
+                    <p>Exozet: GmbH</p>
+                    <p>Mitarbeiter: ca.150</span>
+                    <p>Groups: Games, Interact, Effects</span>
+                    <p>Gr&uuml;ndung</span>
+                </div>
             </div>
-        </section>
+
+        </article>
 
         <!-- right column  -->
         <section class="column-3">
@@ -102,8 +153,9 @@
             <p>Platz der Luftbr&uuml;cke 4-6</p>
             <p>12101 Berlin</p>
             <br>
-            <p>Tel.:+49(0)30 24 65 60 - 0</p>
-            <p>E-Mail:<a href="mailto:info@exozet.com">info@exozet.com</a></p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> Tel.:+49(0)30 24 65 60 - 0</p>
+            <p><i class="fa fa-envelope-o" aria-hidden="true"></i> E-Mail:<a href="mailto:info@exozet.com">info@exozet.com</a>
+            </p>
             <br>
             <h4>Image Teaser</h4>
             <hr>
@@ -113,8 +165,16 @@
     </div>
 </section>
 <hr>
-<footer>
-    <p>&copy; exozet 2014 <span><a href="#">News</a> | <a href="#">Kontakt</a> | <a href="#">Impressum</a></span></p>
+<footer class="wrapper">
+    <div class="row">
+        <div class="column-8 exozet-footer">
+            <p class="exozet-footer">&copy; exozet 2014</p>
+        </div>
+        <div class="column-4 ">
+            <span class="footer-links right-element"><a href="#">News</a> | <a href="#">Kontakt</a> | <a href="#">Impressum</a></span>
+        </div>
+        <div class="done"></div>
+    </div>
 </footer>
 <script type="text/javascript" src="js/main.js"></script>
 </body>

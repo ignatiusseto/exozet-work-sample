@@ -3593,7 +3593,8 @@ body {
   background-color: white;
   color: black;
 }
-body a {
+
+.footer-links {
   color: green;
 }
 
@@ -3601,10 +3602,54 @@ body, button {
   font-family: "Titillium Web";
 }
 
-q {
-  font-family: "Merriweather", serif;
+h2 {
+  font-weight: bold;
+  font-size: 24pt;
+}
+
+p.quote {
+  font-family: "Merriweather";
   font-weight: bold;
   font-style: italic;
+}
+
+button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #738f23;
+}
+
+.date {
+  color: #999999;
+}
+
+.exozet-footer {
+  float: left;
+}
+
+.right-element {
+  float: right;
+}
+
+.done {
+  clear: both;
+}
+
+.alert {
+  color: #e30042;
+  font-family: "Verdana";
+  text-decoration: none;
+}
+
+input, textarea {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.text-right {
+  text-align: right;
 }
 
 /*# sourceMappingURL=main.css.map */

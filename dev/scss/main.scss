@@ -2,6 +2,7 @@
 @import "partials/variables";
 @import "partials/normalize";
 @import "../../bower_components/normalize-scss/sass/normalize";
+@import "font-awesome";
 
 @include normalize();
 
@@ -11,4 +12,14 @@ body {
   a{
     color: green;
   }
+}
+
+body, button {
+  font-family: $body-font;
+}
+
+q {
+  font-family: $quote-font;
+  font-weight: bold;
+  font-style: italic;
 }

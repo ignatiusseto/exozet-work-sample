@@ -1,0 +1,21 @@
+{
+  "name": "trialwork-exozet",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ignatius Seto <me@ignatiusseto.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-scss": "normalize.scss#^6.0.0"
+  }
+}

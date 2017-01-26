@@ -1,7 +1,14 @@
 @import "partials/base";
 @import "partials/variables";
+@import "partials/normalize";
+@import "../../bower_components/normalize-scss/sass/normalize";
+
+@include normalize();
 
 body {
-  background-color: aquamarine;
-  color: blue;
+  background-color: white;
+  color: black;
+  a{
+    color: green;
+  }
 }

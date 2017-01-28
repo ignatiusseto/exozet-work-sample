@@ -11,31 +11,64 @@ body {
   color: black;
 }
 
-.footer-links{
-  color: green;
+.intern-list, span.footer-links {
+  a {
+    color: $link-color;
+    text-decoration: none;
+  }
+}
+
+a.mail, a:visited {
+  color: $link-color;
+  text-decoration: none;
+}
+
+a, span.mandatory {
+  color: $link-color;
+  text-decoration: none;
 }
 
 body, button {
   font-family: $body-font;
 }
 
-h2{
+h2 {
   font-weight: bold;
-  font-size: 24pt;
+  margin-bottom: 10px;
+  line-height: 0.563;
 }
 
 p.quote {
   font-family: $quote-font;
   font-weight: bold;
   font-style: italic;
+
+  font-size: 18px;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.333;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  line-height: 1.429;
+  text-align: left;
 }
 
 button {
   -webkit-border-radius: 5px;
-  -moz-border-radius:5px;
-  border-radius:5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   color: $button-text-color;
   background-color: $button-color;
+}
+
+#timestamp {
+  margin-top: 20px;
+  margin-bottom: -20px;
 }
 
 .date {
@@ -50,23 +83,23 @@ button {
   float: right;
 }
 
-.done{
+.done {
   clear: both;
 }
 
 .alert {
-  color: $alert-text-color;
-  font-family: $alert-font;
+  color: $alert-text-color !important;
+  font-family: $alert-font !important;
+  font-size: 10pt;
   text-decoration: none;
 }
 
-input, textarea{
+input, textarea {
   //width: 100%;
   border-radius: 3px;
 }
 
-
-input{
+input {
   line-height: 28px;
   display: inline-block;
 }
@@ -75,6 +108,7 @@ label {
   line-height: 28px;
   display: inline-block;
   white-space: pre-wrap;
+  text-align: right;
 }
 
 .text-right {
@@ -85,7 +119,75 @@ label {
   display: inline-block;
 }
 
-.input-elements li{
+.input-elements li {
   display: block;
   text-decoration: none;
+}
+
+hr {
+  background-color: rgb(195, 192, 197);
+}
+
+.btn {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.leistungsumfang {
+  font-size: 14px;
+  font-family: "Titillium Web";
+  color: rgb(51, 51, 51);
+  line-height: 1.429;
+  text-align: left;
+}
+
+.text-fields {
+  margin-left:20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(195, 192, 197);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+  width: 300px;
+  height: 28px;
+}
+
+.commentary-field {
+  margin-left:20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(195, 192, 197);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+  width: 300px;
+  height: 98px;
+  resize: none;
+}
+
+.leistungsumfang-label {
+//  font-size: 14px;
+  color: rgb(51, 51, 51);
+//  line-height: 3;
+  text-align: right;
+//  position: absolute;
+//  left: 169.117px;
+//  top: 981.25px;
+  width: 75px;
+//  height: 137px;
+//  z-index: 31;
+}
+
+.input-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  height:50px;
+}
+
+.block label {
+  display: inline-block; width: 140px;line-height: 3; text-align: right;
 }

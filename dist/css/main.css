@@ -3594,8 +3594,19 @@ body {
   color: black;
 }
 
-.footer-links {
-  color: green;
+.intern-list a, span.footer-links a {
+  color: #739024;
+  text-decoration: none;
+}
+
+a.mail, a:visited {
+  color: #739024;
+  text-decoration: none;
+}
+
+a, span.mandatory {
+  color: #739024;
+  text-decoration: none;
 }
 
 body, button {
@@ -3604,13 +3615,27 @@ body, button {
 
 h2 {
   font-weight: bold;
-  font-size: 24pt;
+  margin-bottom: 10px;
+  line-height: 0.563;
 }
 
 p.quote {
-  font-family: "Merriweather";
+  font-family: "Merriweather", serif;
   font-weight: bold;
   font-style: italic;
+  font-size: 18px;
+  color: #333333;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.333;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.429;
+  text-align: left;
 }
 
 button {
@@ -3619,6 +3644,11 @@ button {
   border-radius: 5px;
   color: #fff;
   background-color: #738f23;
+}
+
+#timestamp {
+  margin-top: 20px;
+  margin-bottom: -20px;
 }
 
 .date {
@@ -3638,8 +3668,9 @@ button {
 }
 
 .alert {
-  color: #e30042;
-  font-family: "Verdana";
+  color: #e30042 !important;
+  font-family: "Verdana", regular !important;
+  font-size: 10pt;
   text-decoration: none;
 }
 
@@ -3656,6 +3687,7 @@ label {
   line-height: 28px;
   display: inline-block;
   white-space: pre-wrap;
+  text-align: right;
 }
 
 .text-right {
@@ -3669,6 +3701,70 @@ label {
 .input-elements li {
   display: block;
   text-decoration: none;
+}
+
+hr {
+  background-color: #c3c0c5;
+}
+
+.btn {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.leistungsumfang {
+  font-size: 14px;
+  font-family: "Titillium Web";
+  color: #333333;
+  line-height: 1.429;
+  text-align: left;
+}
+
+.text-fields {
+  margin-left: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c3c0c5;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+  width: 300px;
+  height: 28px;
+}
+
+.commentary-field {
+  margin-left: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c3c0c5;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+  width: 300px;
+  height: 98px;
+  resize: none;
+}
+
+.leistungsumfang-label {
+  color: #333333;
+  text-align: right;
+  width: 75px;
+}
+
+.input-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  height: 50px;
+}
+
+.block label {
+  display: inline-block;
+  width: 140px;
+  line-height: 3;
+  text-align: right;
 }
 
 /*# sourceMappingURL=main.css.map */

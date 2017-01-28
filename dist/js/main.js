@@ -4,7 +4,7 @@
 
 var nameField = document.getElementById("name");
 var emailField = document.getElementById("email");
-var phoneField = document.getElementById("phone");
+var phoneField = document.getElementById("telephone");
 var commentaryField = document.getElementById("commentary");
 
 function formValidator() {

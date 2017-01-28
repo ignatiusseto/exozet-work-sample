@@ -17,6 +17,7 @@ body {
     text-decoration: none;
   }
 }
+
 #intern-link-list li {
   list-style-type: none;
   margin-left: 10px;
@@ -111,26 +112,63 @@ input, textarea {
   border-radius: 3px;
 }
 
-input {
-  line-height: 28px;
-  display: inline-block;
-  border: 1px solid;
+// form elements
+//form {
+//  > div {
+//    > div {
+//      > ul.input-elements {
+//        > li.input-wrapper {
+//          > input[type="text"],
+//          > input[type="email"],
+//          > textarea {
+//            line-height: 28px;
+//            display: inline-block;
+//
+//            &:invalid:not(:focus) {
+//              background: white;
+//            }
+//
+//            &:valid:focus {
+//              background: url(../../dist/img/check.svg);
+//              background-size: 20px;
+//              background-repeat: no-repeat;
+//              background-position: 5px 3px;
+//
+//            }
+//
+//            &:invalid:focus {
+//              background: url(../../dist/img/cross.svg);
+//              background-size: 20px;
+//              background-repeat: no-repeat;
+//              background-position: 5px 3px;
+//            }
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
 
-  &:valid {
-    background: url(../../dist/img/check.svg);
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: 5px 3px;
-  }
-}
-
-input:invalid, textarea:invalid {
-  border: 1px solid red;
-}
-
-textarea:valid {
-  border: 1px solid green;
-}
+//input {
+//  line-height: 28px;
+//  display: inline-block;
+//  border: 1px solid;
+//
+//  &:focus {
+//    &:valid {
+//      background: url(../../dist/img/check.svg);
+//      background-size: 20px;
+//      background-repeat: no-repeat;
+//      background-position: 5px 3px;
+//    }
+//    &:invalid {
+//      background: url(../../dist/img/cross.svg);
+//      background-size: 20px;
+//      background-repeat: no-repeat;
+//      background-position: 5px 3px;
+//    }
+//  }
+//}
 
 label {
   line-height: 28px;
@@ -156,12 +194,38 @@ hr {
   background-color: rgb(195, 192, 197);
 }
 
-.btn {
+#submit-button {
   font-size: 14px;
-  color: rgb(255, 255, 255);
+  color: $button-text-color;
   text-align: center;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
   position: relative;
+  padding: 3px 15px;
+  border-color: $teaser-frame-color;
+
+  background: $button-color; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient($button-lighter-color, $button-color); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($button-lighter-color, $button-color); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($button-lighter-color, $button-color); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($button-lighter-color,$button-color); /* Standard syntax */
+}
+
+#teaser-button {
+  font-size: 14px;
+  display: block !important;
+  text-align: center;
+  width: 100%;
+  box-shadow: 1px 1px #888888;
+  border-width: 1px;
+  border-color: rgb(195, 192, 197);
+  color: $button-text-color;
+  padding: 3px;
+
+  background: $button-color; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient($button-lighter-color, $button-color); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($button-lighter-color, $button-color); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($button-lighter-color, $button-color); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($button-lighter-color,$button-color); /* Standard syntax */
 }
 
 .leistungsumfang {
@@ -173,7 +237,7 @@ hr {
 }
 
 .text-fields {
-  margin-left:20px;
+  margin-left: 20px;
   border-style: solid;
   border-width: 1px;
   border-color: rgb(195, 192, 197);
@@ -185,7 +249,7 @@ hr {
 }
 
 .commentary-field {
-  margin-left:20px;
+  margin-left: 20px;
   border-style: solid;
   border-width: 1px;
   border-color: rgb(195, 192, 197);
@@ -198,26 +262,29 @@ hr {
 }
 
 .leistungsumfang-label {
-//  font-size: 14px;
+  //  font-size: 14px;
   color: rgb(51, 51, 51);
-//  line-height: 3;
+  //  line-height: 3;
   text-align: right;
-//  position: absolute;
-//  left: 169.117px;
-//  top: 981.25px;
+  //  position: absolute;
+  //  left: 169.117px;
+  //  top: 981.25px;
   width: 75px;
-//  height: 137px;
-//  z-index: 31;
+  //  height: 137px;
+  //  z-index: 31;
 }
 
 .input-wrapper {
   display: table-cell;
   vertical-align: middle;
-  height:50px;
+  height: 50px;
 }
 
 .block label {
-  display: inline-block; width: 140px;line-height: 3; text-align: right;
+  display: inline-block;
+  width: 140px;
+  line-height: 3;
+  text-align: right;
 }
 
 //teaser
@@ -240,19 +307,9 @@ hr {
   padding: 5px 12px;
 
 }
-#teaser-text{
-  padding-bottom: 5px;
-}
 
-#teaser-button {
-  display: block !important;
-  text-align: center;
-  width: 100%;
-  box-shadow: 1px 1px #888888;
-  border-width: 1px;
-  border-color: rgb(195, 192, 197);
-  color: rgb(255, 255, 255) !important;
-  padding: 3px;
+#teaser-text {
+  padding-bottom: 5px;
 }
 
 // sidebar

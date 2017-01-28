@@ -130,21 +130,22 @@
         <div class="column-8 block">
             <ul class="input-elements">
                 <li class="input-wrapper">
-                    <label for="name">Name<span class="mandatory">*</span></label><input type="text"
+                    <label for="name">Name<abbr class="mandatory" title="Hier ist ein Pflichtfeld">*</abbr></label><input type="text"
                                                                                          id="name"
-                                                                                         class="text-fields">
+                                                                                         name="name"
+                                                                                         class="text-fields" title="Geben Sie nur Buchstaben ein - z.B. Max Mustermann" pattern="^[a-zA-ZäöüßÄÖÜ ]+$" required>
                 </li>
-                <li class="input-wrapper"><label for="email">E-Mail<span class="mandatory">*</span></label><input
+                <li class="input-wrapper"><label for="email">E-Mail<abbr class="mandatory" title="Hier ist ein Pflichtfeld">*</abbr></label><input
                         type="email"
                         id="email"
-                        class="text-fields">
+                        name="email"
+                        class="text-fields" title="Geben Sie nur eine gültige E-Mail Adresse ein - z.B. abc@xyz.de" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" required>
                 </li>
-                <li class="input-wrapper"><label for="telephone">Telefon</label><input type="tel" id="telephone"
-                                                                                       class="text-fields"></li>
-                <li class="input-wrapper"><label for="commentary">Kommentar<span
-                        class="mandatory">*</span></label><textarea
-                        id="commentary"
-                        maxlength="500" class="commentary-field"></textarea>
+                <li class="input-wrapper"><label for="telephone">Telefon</label><input type="tel" id="telephone" name="telephone"
+                                                                                       class="text-fields" pattern="\d+" title="Geben Sie nur Zahlen ein - z.B. 0301234567"></li>
+                <li class="input-wrapper"><label for="commentary">Kommentar<abbr class="mandatory" title="Hier ist ein Pflichtfeld">*</abbr></label><textarea
+                        id="commentary" name="commentary"
+                        maxlength="500" class="commentary-field" required></textarea>
                     <button type="submit" class="right-element btn">Abschicken</button>
                 </li>
             </ul>

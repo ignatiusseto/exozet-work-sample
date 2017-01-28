@@ -26,12 +26,26 @@ module.exports = function(grunt){
             css : {
                 files: '**/*.scss',
                 tasks: ['sass']
+            },
+            js: {
+                files: 'dev/js/*.js',
+                tasks: ['concat']
+            }
+        },
+        concat: {
+            options: {
+                separator: ';'
+            },
+            dist: {
+                src:['dev/**/*.js'],
+                dest:'dist/js/main.js'
             }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['watch']);
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.registerTask('default', ['concat','watch']);
 
 };

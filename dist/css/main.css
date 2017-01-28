@@ -3617,7 +3617,7 @@ a.mail, a:visited {
   text-decoration: none;
 }
 
-a, span.mandatory {
+a, abbr.mandatory {
   color: #739024;
   text-decoration: none;
 }
@@ -3694,6 +3694,21 @@ input, textarea {
 input {
   line-height: 28px;
   display: inline-block;
+  border: 1px solid;
+}
+input:valid {
+  background: url(../../dist/img/check.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 5px 3px;
+}
+
+input:invalid, textarea:invalid {
+  border: 1px solid red;
+}
+
+textarea:valid {
+  border: 1px solid green;
 }
 
 label {

@@ -14,13 +14,12 @@
         <div class="column-12">
             <img id="header-logo" src="img/exozet_logo.png" alt="Exozet Logo">
             <ul class="navigation" id="top-nav">
-                <li class="menu-trigger">
-                    <a href="javascript:void(0);">&#9776;</a>
-                </li>
                 <li><a class="active nav-menu" href="#">NEWS</a></li>
                 <li><a class="nav-menu" href="#">KONTAKT</a></li>
                 <li><a class="nav-menu" href="#">IMPRESSUM</a></li>
-
+                <li class="menu-trigger">
+                    <a href="javascript:void(0);">&#9776;</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -114,16 +113,16 @@
 <br>
 
 <div class="row">
-    <div class="column-3"></div>
-    <div class="column-6">
+    <div class="column-4"></div>
+    <div class="column-7">
         <p>Felder mit einem <span class="mandatory">*</span> sind Pflichtfelder.</p>
         <a href="#" class="alert">Fehlermeldung</a>
     </div>
-    <div class="column-3"></div>
+    <div class="column-1"></div>
 </div>
 <form action="#0">
     <div class="row">
-        <div class="column-8 block">
+        <div class="column-10 block">
             <ul class="input-elements">
                 <li class="input-wrapper">
                     <label for="name">Name<abbr class="mandatory" title="Hier ist ein Pflichtfeld">*</abbr></label>
@@ -142,15 +141,18 @@
                            title="Geben Sie nur Zahlen ein - z.B. 0301234567">
                 </li>
                 <li class="input-wrapper">
-                    <label for="commentary">Kommentar<abbr class="mandatory"
+                    <label id="commentary-label" for="commentary">Kommentar<abbr class="mandatory"
                                                            title="Hier ist ein Pflichtfeld">*</abbr></label>
                     <textarea id="commentary" name="commentary" maxlength="500" class="commentary-field"
                               required></textarea>
-                    <button type="submit" id="submit-button" class="right-element">Abschicken</button>
+                </li>
+                <li class="input-wrapper">
+                    <button type="submit" id="submit-button">Abschicken</button>
                 </li>
             </ul>
         </div>
     </div>
+
     <!--alternative without list-->
     <!--<div class="row">-->
     <!--<div class="column-8 block">-->

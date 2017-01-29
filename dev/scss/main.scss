@@ -126,11 +126,6 @@ button {
   text-decoration: none;
 }
 
-input, textarea {
-  //width: 100%;
-  border-radius: 3px;
-}
-
 // form elements
 //form {
 //  > div {
@@ -194,7 +189,21 @@ label {
   display: inline-block;
   white-space: pre-wrap;
   text-align: right;
+  vertical-align: baseline;
 }
+
+input, textarea {
+  //width: 100%;
+  border-radius: 3px;
+
+  line-height: 28px;
+  white-space: pre-wrap;
+  vertical-align: text-top;
+}
+
+//form {
+//  width:100%;
+//}
 
 .text-right {
   text-align: right;
@@ -220,6 +229,7 @@ hr {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
   position: relative;
   padding: 3px 15px;
+  margin-top: 10px;
   border-color: $teaser-frame-color;
 
   background: $button-color; /* For browsers that do not support gradients */
@@ -257,13 +267,10 @@ hr {
 
 .text-fields {
   margin-left: 20px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(195, 192, 197);
+  border: 1px solid $border-color;
   border-radius: 4px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
-  width: 300px;
+  box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.35);
+  width: 20em;
   height: 28px;
 }
 
@@ -275,9 +282,12 @@ hr {
   border-radius: 4px;
   background-color: rgb(255, 255, 255);
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
-  width: 300px;
+  width: 20em;
   height: 98px;
   resize: none;
+}
+
+#commentary-label {
 }
 
 .leistungsumfang-label {
@@ -294,9 +304,9 @@ hr {
 }
 
 .input-wrapper {
-  display: table-cell;
+  float: right;
+  display: inline-block;
   vertical-align: middle;
-  height: 50px;
 }
 
 .block label {

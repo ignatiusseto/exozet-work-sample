@@ -88,7 +88,7 @@
 // hide other menu if screen size is smaller than 681px
 @media screen and (max-width: 680px) {
   ul.navigation {
-    li:not(:first-child) {
+    li {
       display: none;
     }
 
@@ -102,23 +102,23 @@
 // for handling created "responsive" class
 @media screen and (max-width: 680px) {
   ul.navigation.responsive {
-      position: relative;
+    position: relative;
 
-      > li {
-        &.menu-trigger {
-          font-size: 15px;
-          position: absolute;
-          right:0;
-          top:0;
-        }
-
-        > a {
-          display: block;
-          text-align: left;
-        }
-
-        float: none;
-        display: inline;
+    > li {
+      &.menu-trigger {
+        font-size: 15px;
+        position: absolute;
+        right: 0;
+        top: 0;
       }
+
+      > a {
+        display: block;
+        text-align: left;
+      }
+
+      float: none;
+      display: inline;
     }
+  }
 }

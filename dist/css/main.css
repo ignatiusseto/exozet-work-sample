@@ -84,7 +84,7 @@
   }
 }
 @media screen and (max-width: 680px) {
-  ul.navigation li:not(:first-child) {
+  ul.navigation li {
     display: none;
   }
   ul.navigation li.menu-trigger {
@@ -3734,15 +3734,19 @@ button {
   text-decoration: none;
 }
 
-input, textarea {
-  border-radius: 3px;
-}
-
 label {
   line-height: 28px;
   display: inline-block;
   white-space: pre-wrap;
   text-align: right;
+  vertical-align: baseline;
+}
+
+input, textarea {
+  border-radius: 3px;
+  line-height: 28px;
+  white-space: pre-wrap;
+  vertical-align: text-top;
 }
 
 .text-right {
@@ -3769,6 +3773,7 @@ hr {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
   position: relative;
   padding: 3px 15px;
+  margin-top: 10px;
   border-color: rgba(170, 170, 170, 0.2);
   background: #738f23;
   /* For browsers that do not support gradients */
@@ -3814,13 +3819,10 @@ hr {
 
 .text-fields {
   margin-left: 20px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #c3c0c5;
+  border: 1px solid #c3c0c5;
   border-radius: 4px;
-  background-color: white;
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
-  width: 300px;
+  box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.35);
+  width: 20em;
   height: 28px;
 }
 
@@ -3832,7 +3834,7 @@ hr {
   border-radius: 4px;
   background-color: white;
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
-  width: 300px;
+  width: 20em;
   height: 98px;
   resize: none;
 }
@@ -3844,9 +3846,9 @@ hr {
 }
 
 .input-wrapper {
-  display: table-cell;
+  float: right;
+  display: inline-block;
   vertical-align: middle;
-  height: 50px;
 }
 
 .block label {

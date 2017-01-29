@@ -40,4 +40,17 @@ function formValidator() {
 
 window.onload = function () {
     formValidator();
+    toggleNavigationMenu();
 };
+
+function toggleNavigationMenu(){
+    var x = document.getElementById("top-nav");
+
+    x.addEventListener("click", function(){
+        if(x.className === "navigation"){
+            x.className += " responsive";
+        } else {
+            x.className = "navigation";
+        }
+    });
+}

@@ -28,9 +28,9 @@
 }
 
 // responsive design media queries
-@media only screen and (min-width: 30em){
+@media only screen and (min-width: 30em) {
   .wrapper {
-    width: 95%;
+    width: 100%;
     max-width: 65em;
   }
 
@@ -81,4 +81,44 @@
   .column-12 {
     width: 100%;
   }
+}
+
+// responsive navigation menu
+
+// hide other menu if screen size is smaller than 681px
+@media screen and (max-width: 680px) {
+  ul.navigation {
+    li:not(:first-child) {
+      display: none;
+    }
+
+    li.menu-trigger {
+      float: right;
+      display: inline-block;
+    }
+  }
+}
+
+// for handling created "responsive" class
+@media screen and (max-width: 680px) {
+  ul.navigation.responsive {
+      position: relative;
+
+      > li {
+        &.menu-trigger {
+          font-size: 15px;
+          position: absolute;
+          right:0;
+          top:0;
+        }
+
+        > a {
+          display: block;
+          text-align: left;
+        }
+
+        float: none;
+        display: inline;
+      }
+    }
 }

@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="de-DE">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <link rel="stylesheet" href="css/main.css">
     <title>Exozet - Probearbeit</title>
 </head>
 
 <body>
-<!-- TODO: navigation pane -->
 <nav class="wrapper">
     <div class="row">
         <div class="column-12">
-            <img src="img/exozet_logo.png" alt="Exozet Logo">
+            <img id="header-logo" src="img/exozet_logo.png" alt="Exozet Logo">
+            <ul class="navigation" id="top-nav">
+                <li class="menu-trigger">
+                    <a href="javascript:void(0);">&#9776;</a>
+                </li>
+                <li><a class="active nav-menu" href="#">NEWS</a></li>
+                <li><a class="nav-menu" href="#">KONTAKT</a></li>
+                <li><a class="nav-menu" href="#">IMPRESSUM</a></li>
 
-            <div id="navigation-menu" class="right-element">
-                <a class="active nav-menu" href="#">NEWS</a><a class="nav-menu" href="#">KONTAKT</a><a
-                    nav-menu href="#">IMPRESSUM</a></div>
+            </ul>
         </div>
     </div>
 </nav>
@@ -32,7 +36,7 @@
 <div class="row">
 <!-- left column -->
 
-<article class="column-9">
+<article class="column-8">
 <h2 id="headline">LONG HEADLINETEXT /</h2>
 <section>
     <p>
@@ -239,6 +243,7 @@
 </div>
 
 </article>
+<div class="column-1"></div>
 <!-- right column  -->
 <section class="column-3">
     <h4>Interne Linkliste</h4>

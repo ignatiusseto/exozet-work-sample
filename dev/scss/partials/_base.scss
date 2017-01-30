@@ -122,3 +122,100 @@
     }
   }
 }
+
+// TODO: responsive design for extra-small device (<=320px) e.g. iPhone5
+@media screen and (max-width: 320px) {
+  // smaller exozet logo and navigation menu font size
+  #header-logo {
+    width: 100px;
+    padding-top: 10px !important;
+  }
+
+  ul.navigation {
+    > li {
+      > a {
+        font-size: 10px !important;
+      }
+    }
+  }
+
+  // smaller h2 text
+  h2 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 0.5;
+    letter-spacing: 1px;
+    font-size: 15pt;
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+
+  // less whitespace for quote, remove these classes in general
+  // margin-bottom of formular
+  .rm-responsive {
+    display: none;
+  }
+
+  // article image has no float, make it centered instead
+  #article-image, #inner-image, .image-copyright {
+    display: block;
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: inherit !important;
+  }
+
+  #after-image {
+    margin-top: 10px;
+  }
+
+  // resize elements in form
+  .block label {
+    text-align: left !important;
+  }
+
+  .input-wrapper {
+    display: block !important;
+
+    > input.text-fields, textarea.commentary-field {
+      margin-left: inherit !important;
+      width: 100% !important;
+    }
+  }
+
+  // make image and button in image teaser smaller
+  #teaser-frame {
+    height: inherit !important;
+  }
+
+  // footer
+  .exozet-footer, span.footer-links {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+    text-align: center;
+  }
+
+  span.footer-links {
+    > * {
+      font-size: 18px;
+      padding-top: 0;
+    }
+  }
+
+  .exozet-footer {
+    padding-bottom: 5px;
+  }
+  .exozet-footer-links {
+    padding-top: 0;
+  }
+}
+
+// TODO: responsive design for small device (<=450px)
+
+// TODO: responsive design for tablet and laptop (<=768px)
+
+// TODO: responsive design for desktop (>768px)
+

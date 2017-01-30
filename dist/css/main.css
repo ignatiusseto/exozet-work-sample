@@ -111,6 +111,79 @@
     text-align: left;
   }
 }
+@media screen and (max-width: 320px) {
+  #header-logo {
+    width: 100px;
+    padding-top: 10px !important;
+  }
+
+  ul.navigation > li > a {
+    font-size: 10px !important;
+  }
+
+  h2 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 0.5;
+    letter-spacing: 1px;
+    font-size: 15pt;
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+
+  .rm-responsive {
+    display: none;
+  }
+
+  #article-image, #inner-image, .image-copyright {
+    display: block;
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: inherit !important;
+  }
+
+  #after-image {
+    margin-top: 10px;
+  }
+
+  .block label {
+    text-align: left !important;
+  }
+
+  .input-wrapper {
+    display: block !important;
+  }
+  .input-wrapper > input.text-fields, .input-wrapper textarea.commentary-field {
+    margin-left: inherit !important;
+    width: 100% !important;
+  }
+
+  #teaser-frame {
+    height: inherit !important;
+  }
+
+  .exozet-footer, span.footer-links {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+    text-align: center;
+  }
+
+  span.footer-links > * {
+    font-size: 18px;
+    padding-top: 0;
+  }
+
+  .exozet-footer {
+    padding-bottom: 5px;
+  }
+
+  .exozet-footer-links {
+    padding-top: 0;
+  }
+}
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

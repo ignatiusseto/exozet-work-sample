@@ -214,6 +214,82 @@
 }
 
 // TODO: responsive design for small device (<=450px)
+@media screen and (max-width: 450px) {
+  .rm-responsive {
+    display: none;
+  }
+
+  // article image has no float, make it centered instead
+  #article-image, #inner-image, p#image-copyright {
+    display: block;
+    float: none !important;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: inherit !important;
+  }
+
+  #after-image {
+    margin-top: 10px;
+  }
+
+  p#image-copyright {
+    text-align: center;
+  }
+
+  .block label {
+    text-align: left !important;
+  }
+
+  .input-wrapper {
+    display: block !important;
+    float:left !important;
+    -webkit-box-sizing: border-box !important; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box !important;    /* Firefox, other Gecko */
+    box-sizing: border-box !important;
+
+    input.text-fields{
+      margin-left: inherit !important;
+      width: 100% !important;
+      max-width: 20em !important;
+    }
+
+    textarea {
+      margin-left: inherit !important;
+      width: 100% !important;
+      max-width: 21em !important;
+    }
+  }
+
+  // make image and button in image teaser smaller
+  #teaser-frame {
+    height: inherit !important;
+  }
+
+  // footer
+  .exozet-footer, span.footer-links {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+    text-align: center;
+  }
+
+  span.footer-links {
+    > * {
+      font-size: 18px;
+      padding-top: 0;
+    }
+  }
+
+  .exozet-footer {
+    padding-bottom: 5px;
+  }
+  .exozet-footer-links {
+    padding-top: 0;
+  }
+}
 
 // TODO: responsive design for tablet and laptop (<=768px)
 

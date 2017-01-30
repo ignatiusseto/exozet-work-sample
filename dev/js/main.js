@@ -31,7 +31,7 @@ function formValidator() {
     });
     commentaryField.addEventListener("keyup", function (event) {
         if (commentaryField.validity.typeMismatch) {
-            commentaryField.setCustomValidity("Sie können maximal 500 Zeichen eingeben.");
+            commentaryField.setCustomValidity("Sie k&ouml;nnen maximal 500 Zeichen eingeben.");
         } else {
             commentaryField.setCustomValidity("");
         }

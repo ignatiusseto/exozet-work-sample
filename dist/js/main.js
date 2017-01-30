@@ -17,7 +17,7 @@ function formValidator() {
     });
     emailField.addEventListener("keyup", function (event) {
         if (emailField.validity.typeMismatch) {
-            emailField.setCustomValidity("Bitte geben Sie eine richtige E-Mail-Adresse - z.B. abc@def.de");
+            emailField.setCustomValidity("Bitte geben Sie eine richtige E-Mail-Adresse ein- z.B. abc@def.de");
         } else {
             email.setCustomValidity("");
         }
@@ -31,7 +31,7 @@ function formValidator() {
     });
     commentaryField.addEventListener("keyup", function (event) {
         if (commentaryField.validity.typeMismatch) {
-            commentaryField.setCustomValidity("Sie können maximal 500 Zeichen eingeben.");
+            commentaryField.setCustomValidity("Sie k&ouml;nnen maximal 500 Zeichen eingeben.");
         } else {
             commentaryField.setCustomValidity("");
         }

@@ -85,11 +85,12 @@
 
 // responsive navigation menu
 
-// hide other menu if screen size is smaller than 681px
-@media screen and (max-width: 680px) {
+// hide other menu if screen size is smaller than 600px
+@media screen and (max-width: 600px) {
   ul.navigation {
     li {
-      display: none;
+//      display: none;
+      font-size: 8px;
     }
 
     li.menu-trigger {
@@ -100,7 +101,7 @@
 }
 
 // for handling created "responsive" class
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 600px) {
   ul.navigation.responsive {
     position: relative;
 
@@ -127,14 +128,15 @@
 @media screen and (max-width: 320px) {
   // smaller exozet logo and navigation menu font size
   #header-logo {
-    width: 100px;
+    width: 60px !important;
     padding-top: 10px !important;
   }
 
   ul.navigation {
     > li {
       > a {
-        font-size: 10px !important;
+        font-size:8pt !important;
+        padding:14px 6px !important;
       }
     }
   }
@@ -267,10 +269,10 @@
 }
 
 // responsive design for small device (<=479px)
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 321px) and (max-width: 479px) {
   #header-logo {
-    width: 100px;
-    padding-top: 10px !important;
+    width: 65px !important;
+    padding-top: 15px !important;
   }
 
   h2 {
@@ -281,6 +283,15 @@
     font-size: 12pt;
     word-break: break-all;
     word-wrap: break-word;
+  }
+
+  ul.navigation {
+    > li {
+      > a {
+        font-size: 10pt !important;
+        padding:14px 5px !important;
+      }
+    }
   }
 
   .column-s-1 {
@@ -416,7 +427,12 @@
 }
 
 // responsive design for phablet (<=600px)
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 480px) and (max-width: 600px) {
+  #header-logo {
+    width: 100px !important;
+    padding-top: 13px !important;
+  }
+
   .rm-m-responsive {
     display: none;
   }

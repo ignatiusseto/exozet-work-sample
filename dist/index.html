@@ -2,164 +2,168 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/main.css">
     <title>Exozet - Probearbeit</title>
 </head>
 
 <body>
-<nav class="wrapper">
+<header class="wrapper">
     <div class="row">
-        <div class="column-12 column-m-12 column-xl-12">
+        <nav class="column-12 column-m-12 column-xl-12" role="navigation">
             <img id="header-logo" src="img/exozet_logo.png" alt="Exozet Logo">
-            <ul class="navigation" id="top-nav">
-                <li><a class="active nav-menu" href="#">NEWS</a></li>
-                <li><a class="nav-menu" href="#kontakt">KONTAKT</a></li>
-                <li><a class="nav-menu" href="#">IMPRESSUM</a></li>
-                <li class="menu-trigger">
-                    <a href="javascript:void(0);">&#9776;</a>
-                </li>
+            <ul class="navigation" id="top-nav" role="menubar">
+                <li><a class="active nav-menu" href="#" aria-label="Zu News gelangen" role="menuitem">NEWS</a></li>
+                <li><a class="nav-menu" href="#kontakt" aria-label="Zu Kontakt gelangen" role="menuitem">KONTAKT</a></li>
+                <li><a class="nav-menu" href="#" aria-label="Zu Impressum gelangen" role="menuitem">IMPRESSUM</a></li>
+                <!--<li class="menu-trigger">-->
+                    <!--<a href="javascript:void(0);">&#9776;</a>-->
+                <!--</li>-->
             </ul>
-        </div>
+        </nav>
     </div>
-</nav>
+</header>
 <hr>
 <!-- Main content -->
-<section class="wrapper">
+<div class="wrapper">
     <div class="row">
         <div id="timestamp" class="column-12">
-            <span class="date">20.02.2012 | 19:02 Uhr</span>
+            <p><time class="date" pubdate datetime="2012-02-09">20.02.2012 | 19:02</time><span class="date"> Uhr</span></p>
         </div>
     </div>
 
     <!-- left column -->
     <div class="row">
-        <article class="column-xs-12 column-s-12 column-m-12 column-t-7 column-l-7 column-xl-7">
+        <main class="column-xs-12 column-s-12 column-m-12 column-t-7 column-l-7 column-xl-7" role="main">
             <h2 id="headline">LONG HEADLINETEXT /</h2>
+
+            <p>
+                Es gibt im Moment in diese Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich
+                lese
+                nicht sehr viele Zeitungen, aber ich habe geh&ouml;rt viele Situationen. Erstens: wir haben nicht
+                offensiv
+                gespielt. Es gibt keine deutsche Mannschaft spielt offensiv und die Name offensiv wie Bayern.</p>
+            <br>
+
+            <p>Letzte Spiel hatten wir in Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir m&uuml;ssen nicht
+                vergessen Zickler. Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese W&ouml;rter, ist
+                m&ouml;glich verstehen, was ich hab gesagt? Danke.</p>
+
+            <div class="row">
+                <div class="column-3"></div>
+                <div class="column-6">
+                    <hr>
+                </div>
+                <div class="column-3 rm-responsive"></div>
+            </div>
+            <div class="row">
+                <div class="column-2 rm-responsive"></div>
+                <div class="column-8">
+                    <p class="quote">&#8222;Ein Trainer ist nicht ein Idiot! Ein Trainer sei sehen was passieren in
+                        Platz.&#8220; -
+                        Trapattoni '98
+                    </p>
+                </div>
+                <div class="column-2 rm-responsive"></div>
+            </div>
+            <div class="row">
+                <div class="column-3 rm-responsive"></div>
+                <div class="column-6">
+                    <hr>
+                </div>
+                <div class="column-3"></div>
+            </div>
+
+            <p>Offensiv, offensiv ist wie machen wir in Platz. Zweitens: ich habe erkl&auml;rt mit diese zwei Spieler:
+                nach Dortmund brauchen vielleicht Halbzeit Pause. Ich habe auch andere Mannschaften gesehen in
+                Europa nach diese Mittwoch. Ich habe gesehen auch zwei Tage die Training.</p>
+
+            <div id="article-image">
+                <img id="inner-image" src="img/opera_house.png" alt="Beispielbild 1" title="Beispielbild 1">
+
+                <p id="image-copyright">&copy; Lorempixel.com</p>
+            </div>
+            <p id="after-image">Ich habe fertig! . . . wenn es gab Fragen, ich kann Worte wiederholen. . . Es gibt
+                im Moment
+                in
+                diese
+                Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich lese nicht sehr viele
+                Zeitungen, aber ich habe geh&ouml;rt viele Situationen. Erstens: wir haben nicht offensiv
+                gespielt.
+                Es
+                gibt keine <a href="#">deutsche Mannschaft</a> spielt offensiv und die Name offensiv wie
+                Bayern. Letzte
+                Spiel
+                hatten
+                wir in Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir m&uuml;ssen nicht vergessen
+                Zickler.
+                Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese W&ouml;rter, ist
+                W&ouml;rter, ist m&ouml;glich verstehen, was ich hab gesagt? Danke. Offensiv, offensiv ist wie machen
+                wir
+                in
+                Platz. Zweitens: ich habe erkl&auml;rt mit diese zwei Spieler: nach Dortmund brauchen vielleicht
+                Halbzeit
+                Pause. Ich habe auch andere Mannschaften gesehen in Europa nach diese Mittwoch.
+            </p>
+            <br>
+
             <section>
-                <p>
-                    Es gibt im Moment in diese Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich
-                    lese
-                    nicht sehr viele Zeitungen, aber ich habe geh&ouml;rt viele Situationen. Erstens: wir haben nicht
-                    offensiv
-                    gespielt. Es gibt keine deutsche Mannschaft spielt offensiv und die Name offensiv wie Bayern.</p>
+                <h2 id="formular">FORMULAR /</h2>
+                <hr>
                 <br>
 
-                <p>Letzte Spiel hatten wir in Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir m&uuml;ssen nicht
-                    vergessen Zickler. Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese W&ouml;rter, ist
-                    m&ouml;glich verstehen, was ich hab gesagt? Danke.</p>
-
                 <div class="row">
-                    <div class="column-3"></div>
-                    <div class="column-6">
-                        <hr>
-                    </div>
-                    <div class="column-3 rm-responsive"></div>
-                </div>
-                <div class="row">
-                    <div class="column-2 rm-responsive"></div>
-                    <div class="column-8">
-                        <p class="quote">&#8222;Ein Trainer ist nicht ein Idiot! Ein Trainer sei sehen was passieren in
-                            Platz.&#8220; -
-                            Trapattoni '98
+                    <div class="column-xl-4 rm-responsive rm-m-responsive rm-t-responsive"></div>
+                    <div class="column-xs-12 column-s-12 column-m-12 column-l-9 column-xl-7">
+                        <p class="mandatory-alert">Felder mit einem <span class="mandatory">*</span> sind Pflichtfelder.
                         </p>
+                        <a href="#" class="alert">Fehlermeldung</a>
                     </div>
-                    <div class="column-2 rm-responsive"></div>
+                    <div class="column-l-1 rm-responsive rm-m-responsive rm-t-responsive rm-xl-responsive"></div>
                 </div>
-                <div class="row">
-                    <div class="column-3 rm-responsive"></div>
-                    <div class="column-6">
-                        <hr>
+                <form action="#0">
+                    <div class="row">
+                        <div class="column-xs-12 column-s-12 column-m-9 column-t-10 column-l-9 column-xl-11 block">
+                            <ul class="input-elements">
+                                <li class="input-wrapper">
+                                    <label for="name">Name<abbr class="mandatory"
+                                                                title="Hier ist ein Pflichtfeld" aria-label="Pflichtfeld Name">*</abbr></label>
+                                    <input required type="text" id="name" name="name" class="text-fields"
+                                           title="Geben Sie nur Buchstaben ein - z.B. Max Mustermann"
+                                           pattern="^[a-zA-ZäöüßÄÖÜ ]+$">
+                                </li>
+                                <li class="input-wrapper">
+                                    <label for="email">E-Mail<abbr class="mandatory"
+                                                                   title="Hier ist ein Pflichtfeld" aria-label="Pflichtfeld Email">*</abbr></label>
+                                    <input required type="email" id="email" name="email" class="text-fields"
+                                           title="Geben Sie nur eine g&uuml;ltige E-Mail Adresse ein - z.B. abc@xyz.de"
+                                           pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$">
+                                </li>
+                                <li class="input-wrapper">
+                                    <label for="telephone">Telefon</label>
+                                    <input type="tel" id="telephone" name="telephone" class="text-fields" pattern="\d+"
+                                           title="Geben Sie nur Zahlen ein - z.B. 0301234567">
+                                </li>
+                                <li class="input-wrapper">
+                                    <label for="commentary">Kommentar<abbr class="mandatory"
+                                                                           title="Hier ist ein Pflichtfeld" aria-label="Pflichtfeld Kommentar">*</abbr></label>
+                                    <textarea id="commentary" name="commentary" maxlength="500" class="commentary-field"
+                                              required></textarea>
+                                </li>
+                                <li class="input-wrapper">
+                                    <button type="submit" id="submit-button">Abschicken</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="column-3"></div>
-                </div>
-
-                <p>Offensiv, offensiv ist wie machen wir in Platz. Zweitens: ich habe erkl&auml;rt mit diese zwei Spieler:
-                    nach Dortmund brauchen vielleicht Halbzeit Pause. Ich habe auch andere Mannschaften gesehen in
-                    Europa nach diese Mittwoch. Ich habe gesehen auch zwei Tage die Training.</p>
-
-                <div id="article-image">
-                    <img id="inner-image" src="img/opera_house.png" img="Sydney Opera House">
-
-                    <p id="image-copyright">&copy; Lorempixel.com</p>
-                </div>
-                <p id="after-image">Ich habe fertig! . . . wenn es gab Fragen, ich kann Worte wiederholen. . . Es gibt
-                    im Moment
-                    in
-                    diese
-                    Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich lese nicht sehr viele
-                    Zeitungen, aber ich habe geh&ouml;rt viele Situationen. Erstens: wir haben nicht offensiv
-                    gespielt.
-                    Es
-                    gibt keine <a href="#">deutsche Mannschaft</a> spielt offensiv und die Name offensiv wie
-                    Bayern. Letzte
-                    Spiel
-                    hatten
-                    wir in Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir m&uuml;ssen nicht vergessen
-                    Zickler.
-                    Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese W&ouml;rter, ist
-                    W&ouml;rter, ist m&ouml;glich verstehen, was ich hab gesagt? Danke. Offensiv, offensiv ist wie machen wir
-                    in
-                    Platz. Zweitens: ich habe erkl&auml;rt mit diese zwei Spieler: nach Dortmund brauchen vielleicht
-                    Halbzeit
-                    Pause. Ich habe auch andere Mannschaften gesehen in Europa nach diese Mittwoch.
-                </p>
+                </form>
+                <br>
             </section>
-            <br>
 
-            <h2 id="formular">FORMULAR /</h2>
-            <hr>
-            <br>
-
-            <div class="row">
-                <div class="column-xl-4 rm-responsive rm-m-responsive rm-t-responsive"></div>
-                <div class="column-xs-12 column-s-12 column-m-12 column-l-9 column-xl-7">
-                    <p class="mandatory-alert">Felder mit einem <span class="mandatory">*</span> sind Pflichtfelder.</p>
-                    <a href="#" class="alert">Fehlermeldung</a>
-                </div>
-                <div class="column-l-1 rm-responsive rm-m-responsive rm-t-responsive rm-xl-responsive"></div>
-            </div>
-            <form action="#0">
-                <div class="row">
-                    <div class="column-xs-12 column-s-12 column-m-9 column-t-10 column-l-9 column-xl-11 block">
-                        <ul class="input-elements">
-                            <li class="input-wrapper">
-                                <label for="name">Name<abbr class="mandatory" title="Hier ist ein Pflichtfeld">*</abbr></label>
-                                <input required type="text" id="name" name="name" class="text-fields"
-                                       title="Geben Sie nur Buchstaben ein - z.B. Max Mustermann"
-                                       pattern="^[a-zA-ZäöüßÄÖÜ ]+$">
-                            </li>
-                            <li class="input-wrapper">
-                                <label for="email">E-Mail<abbr class="mandatory"
-                                                               title="Hier ist ein Pflichtfeld">*</abbr></label>
-                                <input required type="email" id="email" name="email" class="text-fields"
-                                       title="Geben Sie nur eine g&uuml;ltige E-Mail Adresse ein - z.B. abc@xyz.de"
-                                       pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$">
-                            </li>
-                            <li class="input-wrapper">
-                                <label for="telephone">Telefon</label>
-                                <input type="text" id="telephone" name="telephone" class="text-fields" pattern="\d+"
-                                       title="Geben Sie nur Zahlen ein - z.B. 0301234567">
-                            </li>
-                            <li class="input-wrapper">
-                                <label for="commentary">Kommentar<abbr class="mandatory"
-                                                                       title="Hier ist ein Pflichtfeld">*</abbr></label>
-                                <textarea id="commentary" name="commentary" maxlength="500" class="commentary-field"
-                                          required></textarea>
-                            </li>
-                            <li class="input-wrapper">
-                                <button type="submit" id="submit-button">Abschicken</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </form>
-            <br>
-
-            <h2>LEISTUNGSUMFANG /</h2>
-            <hr>
-            <div class="row">
+            <section class="row">
+                <h2>LEISTUNGSUMFANG /</h2>
+                <hr>
                 <div class="column-s-4 column-m-4 column-t-4 column-l-4 column-xl-4 leistungsumfang">
                     <p>1. Lorem</p>
 
@@ -178,21 +182,21 @@
 
                     <p>Gr&uuml;ndung: 1996</p>
                 </div>
-            </div>
-        </article>
+            </section>
+        </main>
 
-        <div class="column-1 rm-responsive  rm-m-responsive"></div>
+        <div class="column-t-1 column-l-1 column-xl-1 rm-responsive  rm-m-responsive"></div>
 
         <!-- right column - sidebar  -->
-        <section class="column-s-12 column-t-4 column-l-4 column-xl-4">
+        <aside class="column-s-12 column-t-4 column-l-4 column-xl-4">
             <h4>Interne Linkliste</h4>
             <hr class="sidebar-hr">
             <ul id="intern-link-list">
-                <li class="intern-list"><a href="#"> Link Nummer
+                <li class="intern-list"><a href="#" aria-label="Zu Link nummer eins"> Link Nummer
                     1</a></li>
-                <li class="intern-list"><a href="#"> Link Nummer
+                <li class="intern-list"><a href="#" aria-label="Zu Link nummer zwei"> Link Nummer
                     2</a></li>
-                <li class="intern-list"><a href="#"> Link Nummer
+                <li class="intern-list"><a href="#" aria-label="Zu Link nummer drei"> Link Nummer
                     3</a></li>
             </ul>
             <br>
@@ -216,16 +220,16 @@
             <h4>Image Teaser</h4>
             <hr class="sidebar-hr">
             <div id="teaser-frame">
-                <img id="teaser-image" src="img/ipad_logo.png" alt="Mehr lesen">
+                <img id="teaser-image" src="img/ipad_logo.png" alt="Beispielbild 2" title="Beispielbild 2">
 
                 <div id="teaser-content">
                     <p id="teaser-text">Es gibt im Moment in diese Mannschaft, oh einige Spieler!</p>
-                    <button id="teaser-button">Mehr lesen</button>
+                    <button id="teaser-button" aria-label="Mehr &uuml;ber die Mannschaft lesen">Mehr lesen</button>
                 </div>
             </div>
-        </section>
+        </aside>
     </div>
-</section>
+</div>
 <hr>
 <footer class="wrapper">
     <div class="row">

@@ -11,9 +11,10 @@ body {
   color: black;
 }
 
-#navigation-menu {
+.nav-menu {
   display: inline-block;
   padding-top: 12px;
+  font-size: 8pt;
   > a {
     color: black;
     padding: 5px 15px;

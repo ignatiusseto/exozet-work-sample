@@ -37,90 +37,38 @@
   .column-1 {
     width: 8.33333%;
   }
-
   .column-2 {
     width: 16.66667%;
   }
-
   .column-3 {
     width: 25%;
   }
-
   .column-4 {
     width: 33.33333%;
   }
-
   .column-5 {
     width: 41.66667%;
   }
-
   .column-6 {
     width: 50%;
   }
-
   .column-7 {
     width: 58.33333%;
   }
-
   .column-8 {
     width: 66.66667%;
   }
-
   .column-9 {
     width: 75%;
   }
-
   .column-10 {
     width: 83.33333%;
   }
-
   .column-11 {
     width: 91.66667%;
   }
-
   .column-12 {
     width: 100%;
-  }
-}
-
-// responsive navigation menu
-
-// hide other menu if screen size is smaller than 600px
-@media screen and (max-width: 600px) {
-  ul.navigation {
-    li {
-//      display: none;
-      font-size: 8px;
-    }
-
-    li.menu-trigger {
-      float: right;
-      display: inline-block;
-    }
-  }
-}
-
-// for handling created "responsive" class
-@media screen and (max-width: 600px) {
-  ul.navigation.responsive {
-    position: relative;
-
-    > li {
-      &.menu-trigger {
-        font-size: 15px;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-
-      > a {
-        display: block;
-        text-align: left;
-      }
-
-      float: none;
-      display: inline;
-    }
   }
 }
 
@@ -129,14 +77,14 @@
   // smaller exozet logo and navigation menu font size
   #header-logo {
     width: 60px !important;
-    padding-top: 10px !important;
+    padding-top: 15px !important;
   }
 
   ul.navigation {
     > li {
       > a {
-        font-size:8pt !important;
-        padding:14px 6px !important;
+        font-size: 8pt !important;
+        padding: 14px 6px !important;
       }
     }
   }
@@ -159,7 +107,7 @@
   }
 
   // article image has no float, make it centered instead
-  #article-image, #inner-image, .image-copyright {
+  #article-image, #inner-image, p#image-copyright {
     display: block;
     float: none !important;
     margin-left: auto;
@@ -172,7 +120,11 @@
     margin-top: 10px;
   }
 
-  .mandatory-alert{
+  p#image-copyright {
+    text-align: center;
+  }
+
+  .mandatory-alert {
     font-size: 10pt;
   }
 
@@ -217,55 +169,42 @@
   .exozet-footer-links {
     padding-top: 0;
   }
-
   .column-xs-1 {
     width: 8.33333%;
   }
-
   .column-xs-2 {
     width: 16.66667%;
   }
-
   .column-xs-3 {
     width: 25%;
   }
-
   .column-xs-4 {
     width: 33.33333%;
   }
-
   .column-xs-5 {
     width: 41.66667%;
   }
-
   .column-xs-6 {
     width: 50%;
   }
-
   .column-xs-7 {
     width: 58.33333%;
   }
-
   .column-xs-8 {
     width: 66.66667%;
   }
-
   .column-xs-9 {
     width: 75%;
   }
-
   .column-xs-10 {
     width: 83.33333%;
   }
-
   .column-xs-11 {
     width: 91.66667%;
   }
-
   .column-xs-12 {
     width: 100%;
   }
-
 }
 
 // responsive design for small device (<=479px)
@@ -289,7 +228,7 @@
     > li {
       > a {
         font-size: 10pt !important;
-        padding:14px 5px !important;
+        padding: 14px 5px !important;
       }
     }
   }
@@ -297,47 +236,36 @@
   .column-s-1 {
     width: 8.33333%;
   }
-
   .column-s-2 {
     width: 16.66667%;
   }
-
   .column-s-3 {
     width: 25%;
   }
-
   .column-s-4 {
     width: 33.33333%;
   }
-
   .column-s-5 {
     width: 41.66667%;
   }
-
   .column-s-6 {
     width: 50%;
   }
-
   .column-s-7 {
     width: 58.33333%;
   }
-
   .column-s-8 {
     width: 66.66667%;
   }
-
   .column-s-9 {
     width: 75%;
   }
-
   .column-s-10 {
     width: 83.33333%;
   }
-
   .column-s-11 {
     width: 91.66667%;
   }
-
   .column-s-12 {
     width: 100%;
   }
@@ -358,7 +286,6 @@
   #article-image, #inner-image, p#image-copyright {
     display: block;
     float: none !important;
-    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
 
@@ -371,6 +298,8 @@
 
   p#image-copyright {
     text-align: center;
+    padding-top: initial !important;
+    padding-bottom: initial !important;
   }
 
   .block label {
@@ -440,47 +369,36 @@
   .column-m-1 {
     width: 8.33333%;
   }
-
   .column-m-2 {
     width: 16.66667%;
   }
-
   .column-m-3 {
     width: 25%;
   }
-
   .column-m-4 {
     width: 33.33333%;
   }
-
   .column-m-5 {
     width: 41.66667%;
   }
-
   .column-m-6 {
     width: 50%;
   }
-
   .column-m-7 {
     width: 58.33333%;
   }
-
   .column-m-8 {
     width: 66.66667%;
   }
-
   .column-m-9 {
     width: 75%;
   }
-
   .column-m-10 {
     width: 83.33333%;
   }
-
   .column-m-11 {
     width: 91.66667%;
   }
-
   .column-m-12 {
     width: 100%;
   }
@@ -509,8 +427,8 @@
     }
   }
 
-  #submit-button {
-    float:right !important;
+  #submit-button-wrapper {
+    float: right !important;
   }
 
   // make image and button in image teaser smaller
@@ -543,7 +461,7 @@
 }
 
 // responsive design for tablet (<=768px)
-@media screen and (min-width:601px) and (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 768px) {
   .rm-t-responsive {
     display: none;
   }
@@ -551,47 +469,36 @@
   .column-t-1 {
     width: 8.33333%;
   }
-
   .column-t-2 {
     width: 16.66667%;
   }
-
   .column-t-3 {
     width: 25%;
   }
-
   .column-t-4 {
     width: 33.33333%;
   }
-
   .column-t-5 {
     width: 41.66667%;
   }
-
   .column-t-6 {
     width: 50%;
   }
-
   .column-t-7 {
     width: 58.33333%;
   }
-
   .column-t-8 {
     width: 66.66667%;
   }
-
   .column-t-9 {
     width: 75%;
   }
-
   .column-t-10 {
     width: 83.33333%;
   }
-
   .column-t-11 {
     width: 91.66667%;
   }
-
   .column-t-12 {
     width: 100%;
   }
@@ -624,14 +531,13 @@
   #article-image, #inner-image, p#image-copyright {
     display: block;
     float: none !important;
-    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
 
     padding: inherit !important;
   }
 
-  #after-image {
+  p#image-copyright {
     margin-top: 10px;
   }
 
@@ -645,12 +551,12 @@
   }
 
   p.quote {
-    font-size:10pt !important;
+    font-size: 10pt !important;
   }
 }
 
 // responsive design for desktop (768px<x<1060px)
-@media screen and (min-width:769px) and (max-width:1060px) {
+@media screen and (min-width: 769px) and (max-width: 1060px) {
   .rm-l-responsive {
     display: none;
   }
@@ -732,13 +638,13 @@
     }
   }
 
-  #submit-button {
-    float:right !important;
+  #submit-button-wrapper {
+    float: right !important;
   }
 }
 
 // responsive design for large desktop (>1060)
-@media screen and (min-width:1061px){
+@media screen and (min-width: 1061px) {
   .rm-xl-responsive {
     display: none;
   }
@@ -746,51 +652,39 @@
   .column-xl-1 {
     width: 8.33333%;
   }
-
   .column-xl-2 {
     width: 16.66667%;
   }
-
   .column-xl-3 {
     width: 25%;
   }
-
   .column-xl-4 {
     width: 33.33333%;
   }
-
   .column-xl-5 {
     width: 41.66667%;
   }
-
   .column-xl-6 {
     width: 50%;
   }
-
   .column-xl-7 {
     width: 58.33333%;
   }
-
   .column-xl-8 {
     width: 66.66667%;
   }
-
   .column-xl-9 {
     width: 75%;
   }
-
   .column-xl-10 {
     width: 83.33333%;
   }
-
   .column-xl-11 {
     width: 91.66667%;
   }
-
   .column-xl-12 {
     width: 100%;
   }
-
   #teaser-frame {
     height: inherit !important;
   }

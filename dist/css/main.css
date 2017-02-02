@@ -83,38 +83,10 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 600px) {
-  ul.navigation li {
-    font-size: 8px;
-  }
-  ul.navigation li.menu-trigger {
-    float: right;
-    display: inline-block;
-  }
-}
-@media screen and (max-width: 600px) {
-  ul.navigation.responsive {
-    position: relative;
-  }
-  ul.navigation.responsive > li {
-    float: none;
-    display: inline;
-  }
-  ul.navigation.responsive > li.menu-trigger {
-    font-size: 15px;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.navigation.responsive > li > a {
-    display: block;
-    text-align: left;
-  }
-}
 @media screen and (max-width: 320px) {
   #header-logo {
     width: 60px !important;
-    padding-top: 10px !important;
+    padding-top: 15px !important;
   }
 
   ul.navigation > li > a {
@@ -136,7 +108,7 @@
     display: none;
   }
 
-  #article-image, #inner-image, .image-copyright {
+  #article-image, #inner-image, p#image-copyright {
     display: block;
     float: none !important;
     margin-left: auto;
@@ -146,6 +118,10 @@
 
   #after-image {
     margin-top: 10px;
+  }
+
+  p#image-copyright {
+    text-align: center;
   }
 
   .mandatory-alert {
@@ -321,7 +297,6 @@
   #article-image, #inner-image, p#image-copyright {
     display: block;
     float: none !important;
-    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     padding: inherit !important;
@@ -333,6 +308,8 @@
 
   p#image-copyright {
     text-align: center;
+    padding-top: initial !important;
+    padding-bottom: initial !important;
   }
 
   .block label {
@@ -466,7 +443,7 @@
     max-width: 21em !important;
   }
 
-  #submit-button {
+  #submit-button-wrapper {
     float: right !important;
   }
 
@@ -575,13 +552,12 @@
   #article-image, #inner-image, p#image-copyright {
     display: block;
     float: none !important;
-    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     padding: inherit !important;
   }
 
-  #after-image {
+  p#image-copyright {
     margin-top: 10px;
   }
 
@@ -679,7 +655,7 @@
     max-width: 21em !important;
   }
 
-  #submit-button {
+  #submit-button-wrapper {
     float: right !important;
   }
 }

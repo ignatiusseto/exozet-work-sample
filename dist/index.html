@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/main.css">
-    <title>Exozet - Probearbeit</title>
+    <title>Exozet - Frontend Challenge</title>
 </head>
 
 <body>
@@ -17,9 +17,6 @@
                 <li><a class="active nav-menu" href="#" aria-label="Zu News gelangen" role="menuitem">NEWS</a></li>
                 <li><a class="nav-menu" href="#kontakt" aria-label="Zu Kontakt gelangen" role="menuitem">KONTAKT</a></li>
                 <li><a class="nav-menu" href="#" aria-label="Zu Impressum gelangen" role="menuitem">IMPRESSUM</a></li>
-                <!--<li class="menu-trigger">-->
-                    <!--<a href="javascript:void(0);">&#9776;</a>-->
-                <!--</li>-->
             </ul>
         </nav>
     </div>
@@ -29,14 +26,14 @@
 <div class="wrapper">
     <div class="row">
         <div id="timestamp" class="column-12">
-            <p><time class="date" pubdate datetime="2012-02-09">20.02.2012 | 19:02</time><span class="date"> Uhr</span></p>
+            <p><time class="date" datetime="2012-02-09">20.02.2012 | 19:02</time><span class="date"> Uhr</span></p>
         </div>
     </div>
 
     <!-- left column -->
     <div class="row">
         <main class="column-xs-12 column-s-12 column-m-12 column-t-7 column-l-7 column-xl-7" role="main">
-            <h2 id="headline">LONG HEADLINETEXT /</h2>
+            <h2 id="headline" role="heading">LONG HEADLINETEXT /</h2>
 
             <p>
                 Es gibt im Moment in diese Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich
@@ -114,17 +111,18 @@
                 <br>
 
                 <div class="row">
-                    <div class="column-xl-4 rm-responsive rm-m-responsive rm-t-responsive"></div>
+                    <div class="column-l-2 column-xl-4 rm-responsive rm-m-responsive rm-t-responsive"></div>
                     <div class="column-xs-12 column-s-12 column-m-12 column-l-9 column-xl-7">
                         <p class="mandatory-alert">Felder mit einem <span class="mandatory">*</span> sind Pflichtfelder.
                         </p>
                         <a href="#" class="alert">Fehlermeldung</a>
                     </div>
-                    <div class="column-l-1 rm-responsive rm-m-responsive rm-t-responsive rm-xl-responsive"></div>
+                    <div class="rm-responsive rm-m-responsive rm-t-responsive rm-l-responsive rm-xl-responsive"></div>
                 </div>
                 <form action="#0">
                     <div class="row">
-                        <div class="column-xs-12 column-s-12 column-m-9 column-t-10 column-l-9 column-xl-11 block">
+                        <div class="column-l-2 rm-responsive rm-m-responsive rm-t-responsive rm-xl-responsive"></div>
+                        <div class="column-xs-12 column-s-9 column-m-7 column-t-10 column-l-7 column-xl-11 block">
                             <ul class="input-elements">
                                 <li class="input-wrapper">
                                     <label for="name">Name<abbr class="mandatory"
@@ -151,7 +149,7 @@
                                     <textarea id="commentary" name="commentary" maxlength="500" class="commentary-field"
                                               required></textarea>
                                 </li>
-                                <li class="input-wrapper">
+                                <li id="submit-button-wrapper" class="input-wrapper">
                                     <button type="submit" id="submit-button">Abschicken</button>
                                 </li>
                             </ul>
@@ -236,9 +234,9 @@
         <div class="column-8 column-m-12 exozet-footer">
             <p class="exozet-footer">&copy; exozet 2014</p>
         </div>
-        <div class="column-4 column-m-12 exozet-footer-links">
-            <span class="footer-links right-element"><a href="#">News | </a><a href="#kontakt">Kontakt | </a><a
-                    href="#">Impressum</a></span>
+        <div class="column-4 column-m-12 exozet-footer-links" role="menu">
+            <span class="footer-links right-element"><a href="#" aria-label="Zu News gelangen" role="menuitem">News</a> | <a href="#kontakt" aria-label="Zu Kontakt gelangen" role="menuitem">Kontakt | </a><a
+                    href="#" aria-label="Zu Impressum gelangen" role="menuitem">Impressum</a></span>
         </div>
         <div class="done rm-responsive"></div>
     </div>

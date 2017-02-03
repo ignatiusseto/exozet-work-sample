@@ -1,5 +1,5 @@
-module.exports = function(grunt){
-    // Project configuration.
+module.exports = function (grunt) {
+    // Projektkonfiguration
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
@@ -7,23 +7,21 @@ module.exports = function(grunt){
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                src: 'src/<%= pkg.name %>.js',
-                dest: 'build/<%= pkg.name %>.min.js'
+                src: 'dev/js/main.js',
+                dest: 'dist/js/main.min.js'
             }
         },
-        // grunt-contrib-sass configuration
         sass: {
             dist: {
                 options: {
                     style: 'expanded'
                 },
-                files : {
-                    'dist/css/main.css': 'dev/scss/main.scss'
-                }
+                files: {
+                    'dev/css/main.css': 'dev/scss/main.scss'}
             }
         },
         watch: {
-            css : {
+            css: {
                 files: '**/*.scss',
                 tasks: ['sass']
             },
@@ -37,15 +35,29 @@ module.exports = function(grunt){
                 separator: ';'
             },
             dist: {
-                src:['dev/**/*.js'],
-                dest:'dist/js/main.js'
+                src: ['dev/**/*.js'],
+                dest: 'dist/js/main.js'
+            }
+        },
+        cssmin: {
+            target: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'dev/css',
+                        src: ['*.css'],
+                        dest: 'dist/css',
+                        ext: '.min.css'
+                    }
+                ]
             }
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.registerTask('default', ['concat','watch']);
+    require('load-grunt-tasks')(grunt);
 
+    // DEV
+    grunt.registerTask('default', ['watch']);
+    // PROD
+    grunt.registerTask('prod', ['concat', 'cssmin', 'uglify']);
 };

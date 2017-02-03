@@ -1,7 +1,6 @@
 @import "partials/base";
 @import "partials/variables";
 @import "partials/normalize";
-@import "../../bower_components/normalize-scss/sass/normalize";
 @import "font-awesome";
 
 @include normalize();
@@ -91,7 +90,7 @@ section {
   }
 }
 
-button {
+button, input[type="submit"] {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -127,64 +126,6 @@ button {
   text-decoration: none;
 }
 
-// form elements
-//form {
-//  > div {
-//    > div {
-//      > ul.input-elements {
-//        > li.input-wrapper {
-//          > input[type="text"],
-//          > input[type="email"],
-//          > textarea {
-//            line-height: 28px;
-//            display: inline-block;
-//
-//            &:invalid:not(:focus) {
-//              background: white;
-//            }
-//
-//            &:valid:focus {
-//              background: url(../../dist/img/check.svg);
-//              background-size: 20px;
-//              background-repeat: no-repeat;
-//              background-position: 5px 3px;
-//
-//            }
-//
-//            &:invalid:focus {
-//              background: url(../../dist/img/cross.svg);
-//              background-size: 20px;
-//              background-repeat: no-repeat;
-//              background-position: 5px 3px;
-//            }
-//          }
-//        }
-//      }
-//    }
-//  }
-//}
-
-//input {
-//  line-height: 28px;
-//  display: inline-block;
-//  border: 1px solid;
-//
-//  &:focus {
-//    &:valid {
-//      background: url(../../dist/img/check.svg);
-//      background-size: 20px;
-//      background-repeat: no-repeat;
-//      background-position: 5px 3px;
-//    }
-//    &:invalid {
-//      background: url(../../dist/img/cross.svg);
-//      background-size: 20px;
-//      background-repeat: no-repeat;
-//      background-position: 5px 3px;
-//    }
-//  }
-//}
-
 label {
   line-height: 28px;
   display: inline-block;
@@ -194,17 +135,12 @@ label {
 }
 
 input, textarea {
-  //width: 100%;
   border-radius: 3px;
 
   line-height: 28px;
   white-space: pre-wrap;
   vertical-align: text-top;
 }
-
-//form {
-//  width:100%;
-//}
 
 .text-right {
   text-align: right;

@@ -3,6 +3,7 @@ var emailField = document.getElementById("email");
 var phoneField = document.getElementById("telephone");
 var commentaryField = document.getElementById("commentary");
 
+// Diese Funktion handelt es sich lediglich um personalisierte Validierungsmeldungen
 function formValidator() {
     nameField.addEventListener("keyup", function (event) {
         if (nameField.validity.typeMismatch) {

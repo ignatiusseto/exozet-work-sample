@@ -72,7 +72,7 @@
   }
 }
 
-// responsive design for extra-small device (<=320px) e.g. iPhone5
+// responsive design for extra-small viewport(<=320px) e.g. iPhone5
 @media screen and (max-width: 320px) {
   // smaller exozet logo and navigation menu font size
   #header-logo {
@@ -643,7 +643,7 @@
   }
 }
 
-// responsive design for large desktop (>1060)
+// responsive design for large viewport (>1060)
 @media screen and (min-width: 1061px) {
   .rm-xl-responsive {
     display: none;

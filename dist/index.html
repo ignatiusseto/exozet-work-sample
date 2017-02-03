@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="all" href="css/main.min.css">
+    <!-- IE8 JS für Responsive Design -->
+    <!--[if lte IE 8]>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/Modernizr-2.5.3.forms.js"></script>
+    <script type="text/javascript" src="js/shared/js/html5Forms.js" data-webforms2-support="validation"></script>
     <title>Exozet - Frontend Challenge</title>
 </head>
 
@@ -15,218 +21,232 @@
             <img id="header-logo" src="img/exozet_logo.png" alt="Exozet Logo">
             <ul class="navigation" id="top-nav" role="menubar">
                 <li><a class="active nav-menu" href="#" aria-label="Zu News gelangen" role="menuitem">NEWS</a></li>
-                <li><a class="nav-menu" href="#kontakt" aria-label="Zu Kontakt gelangen" role="menuitem">KONTAKT</a></li>
+                <li><a class="nav-menu" href="#kontakt" aria-label="Zu Kontakt gelangen" role="menuitem">KONTAKT</a>
+                </li>
                 <li><a class="nav-menu" href="#" aria-label="Zu Impressum gelangen" role="menuitem">IMPRESSUM</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <hr>
-<!-- Main content -->
+
 <div class="wrapper">
+<div class="row">
+    <div id="timestamp" class="column-12">
+        <p>
+            <time class="date" datetime="2012-02-09">20.02.2012 | 19:02</time>
+            <span class="date"> Uhr</span></p>
+    </div>
+</div>
+<!-- Main content -->
+<!-- left column -->
+<div class="row">
+<main class="column-xs-12 column-s-12 column-m-12 column-t-7 column-l-7 column-xl-7" role="main">
+    <h2 id="headline" role="heading">LONG HEADLINETEXT /</h2>
+
+    <p>
+        Es gibt im Moment in diese Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich
+        lese
+        nicht sehr viele Zeitungen, aber ich habe geh&ouml;rt viele Situationen. Erstens: wir haben nicht
+        offensiv
+        gespielt. Es gibt keine deutsche Mannschaft spielt offensiv und die Name offensiv wie Bayern.</p>
+    <br>
+
+    <p>Letzte Spiel hatten wir in Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir m&uuml;ssen nicht
+        vergessen Zickler. Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese W&ouml;rter, ist
+        m&ouml;glich verstehen, was ich hab gesagt? Danke.</p>
+
     <div class="row">
-        <div id="timestamp" class="column-12">
-            <p><time class="date" datetime="2012-02-09">20.02.2012 | 19:02</time><span class="date"> Uhr</span></p>
+        <div class="column-3"></div>
+        <div class="column-6">
+            <hr>
+        </div>
+        <div class="column-3 rm-responsive"></div>
+    </div>
+    <div class="row">
+        <div class="column-2 rm-responsive"></div>
+        <div class="column-8">
+            <p class="quote">&#8222;Ein Trainer ist nicht ein Idiot! Ein Trainer sei sehen was passieren in
+                Platz.&#8220; -
+                Trapattoni '98
+            </p>
+        </div>
+        <div class="column-2 rm-responsive"></div>
+    </div>
+    <div class="row">
+        <div class="column-3 rm-responsive"></div>
+        <div class="column-6">
+            <hr>
+        </div>
+        <div class="column-3"></div>
+    </div>
+
+    <p>Offensiv, offensiv ist wie machen wir in Platz. Zweitens: ich habe erkl&auml;rt mit diese zwei Spieler:
+        nach Dortmund brauchen vielleicht Halbzeit Pause. Ich habe auch andere Mannschaften gesehen in
+        Europa nach diese Mittwoch. Ich habe gesehen auch zwei Tage die Training.</p>
+
+    <div id="article-image">
+        <img id="inner-image" src="img/opera_house.png" alt="Beispielbild 1" title="Beispielbild 1">
+
+        <p id="image-copyright">&copy; Lorempixel.com</p>
+    </div>
+    <p id="after-image">Ich habe fertig! . . . wenn es gab Fragen, ich kann Worte wiederholen. . . Es gibt
+        im Moment
+        in
+        diese
+        Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich lese nicht sehr viele
+        Zeitungen, aber ich habe geh&ouml;rt viele Situationen. Erstens: wir haben nicht offensiv
+        gespielt.
+        Es
+        gibt keine <a href="#">deutsche Mannschaft</a> spielt offensiv und die Name offensiv wie
+        Bayern. Letzte
+        Spiel
+        hatten
+        wir in Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir m&uuml;ssen nicht vergessen
+        Zickler.
+        Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese W&ouml;rter, ist
+        W&ouml;rter, ist m&ouml;glich verstehen, was ich hab gesagt? Danke. Offensiv, offensiv ist wie machen
+        wir
+        in
+        Platz. Zweitens: ich habe erkl&auml;rt mit diese zwei Spieler: nach Dortmund brauchen vielleicht
+        Halbzeit
+        Pause. Ich habe auch andere Mannschaften gesehen in Europa nach diese Mittwoch.
+    </p>
+    <br>
+
+    <section>
+        <h2 id="formular">FORMULAR /</h2>
+        <hr>
+        <br>
+
+        <div class="row">
+            <div class="column-l-2 column-xl-4 rm-responsive rm-m-responsive rm-t-responsive"></div>
+            <div class="column-xs-12 column-s-12 column-m-12 column-l-9 column-xl-7">
+                <p class="mandatory-alert">Felder mit einem <span class="mandatory">*</span> sind Pflichtfelder.
+                </p>
+                <a href="#" class="alert">Fehlermeldung</a>
+            </div>
+            <div class="rm-responsive rm-m-responsive rm-t-responsive rm-l-responsive rm-xl-responsive"></div>
+        </div>
+        <form action="" method="post">
+            <div class="row">
+                <div class="column-l-2 rm-responsive rm-m-responsive rm-t-responsive rm-xl-responsive"></div>
+                <div class="column-xs-12 column-s-9 column-m-7 column-t-10 column-l-7 column-xl-11 block">
+                    <ul class="input-elements">
+                        <li class="input-wrapper">
+                            <label for="name">Name<abbr class="mandatory"
+                                                        title="Hier ist ein Pflichtfeld"
+                                                        aria-label="Pflichtfeld Name">*</abbr></label>
+                            <input type="text" id="name" name="name" required="required" aria-required="true"
+                                   class="text-fields"
+                                   title="Geben Sie nur Buchstaben ein - z.B. Max Mustermann"
+                                   aria-label="Geben Sie nur Buchstaben ein - zum Beispiel Max Mustermann"
+                                   pattern="^[a-zA-ZäöüßÄÖÜ ]+$">
+                        </li>
+                        <li class="input-wrapper">
+                            <label for="email">E-Mail<abbr class="mandatory"
+                                                           title="Hier ist ein Pflichtfeld"
+                                                           aria-label="Pflichtfeld Email">*</abbr></label>
+                            <input type="email" id="email" name="email" required="required" aria-required="true"
+                                   class="text-fields"
+                                   title="Geben Sie nur eine g&uuml;ltige E-Mail Adresse ein - z.B. abc@xyz.de"
+                                   aria-label="Geben Sie nur eine g&uuml;ltige E-Mail Adresse ein, zum Beispiel max@mustermann.de"
+                                   pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"/>
+                        </li>
+                        <li class="input-wrapper">
+                            <label for="telephone">Telefon</label>
+                            <input type="tel" id="telephone" name="telephone" aria-required="false"
+                                   class="text-fields" pattern="\d+"
+                                   title="Geben Sie nur Zahlen ein - z.B. 0301234567"
+                                   aria-label="Geben Sie nur Zahlen ein"/>
+                        </li>
+                        <li class="input-wrapper">
+                            <label for="commentary">Kommentar<abbr class="mandatory"
+                                                                   title="Hier ist ein Pflichtfeld"
+                                                                   aria-label="Pflichtfeld Kommentar">*</abbr></label>
+                            <textarea id="commentary" name="commentary" required="required" aria-required="true"
+                                      aria-label="Sie können bis zu 500 Zeichen schreiben" maxlength="500"
+                                      class="commentary-field"></textarea>
+                        </li>
+                        <li id="submit-button-wrapper" class="input-wrapper">
+                            <input type="submit" id="submit-button"
+                                   aria-label="Möchten Sie jetzt Ihre Eingaben abschicken?" value="Abschicken"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+        <br>
+    </section>
+
+    <section class="row">
+        <h2>LEISTUNGSUMFANG /</h2>
+        <hr>
+        <div class="column-s-4 column-m-4 column-t-4 column-l-4 column-xl-4 leistungsumfang">
+            <p>1. Lorem</p>
+
+            <p>2. Ipsum</p>
+
+            <p>3. Dolor</p>
+
+            <p>4. Sit</p>
+        </div>
+        <div class="column-s-8 column-m-8 column-t-8 column-l-8 column-xl-4 leistungsumfang">
+            <p>Exozet: GmbH</p>
+
+            <p>Mitarbeiter: ca.150</p>
+
+            <p>Groups: Games, Interact, Effects</p>
+
+            <p>Gr&uuml;ndung: 1996</p>
+        </div>
+    </section>
+</main>
+
+<div class="column-t-1 column-l-1 column-xl-1 rm-responsive  rm-m-responsive"></div>
+
+<!-- right column - sidebar  -->
+<aside class="column-s-12 column-t-4 column-l-4 column-xl-4">
+    <h4>Interne Linkliste</h4>
+    <hr class="sidebar-hr">
+    <ul id="intern-link-list">
+        <li class="intern-list"><a href="#" aria-label="Zu Link nummer eins"> Link Nummer
+            1</a></li>
+        <li class="intern-list"><a href="#" aria-label="Zu Link nummer zwei"> Link Nummer
+            2</a></li>
+        <li class="intern-list"><a href="#" aria-label="Zu Link nummer drei"> Link Nummer
+            3</a></li>
+    </ul>
+    <br>
+    <h4 id="kontakt">Kontakt</h4>
+    <hr class="sidebar-hr">
+    <div class="sidebar-content">
+        <p>Exozet Berlin GmbH</p>
+
+        <p>Platz der Luftbr&uuml;cke 4-6</p>
+
+        <p>12101 Berlin</p>
+        <br>
+
+        <p><i class="fa fa-phone" aria-hidden="true"></i> Tel.: +49 (0)30 24 65 60 - 0</p>
+
+        <p><i class="fa fa-envelope-o" aria-hidden="true"></i> E-Mail: <a class="mail"
+                                                                          href="mailto:info@exozet.com">info@exozet.com</a>
+        </p>
+    </div>
+    <br>
+    <h4>Image Teaser</h4>
+    <hr class="sidebar-hr">
+    <div id="teaser-frame">
+        <img id="teaser-image" src="img/ipad_logo.png" alt="Beispielbild 2" title="Beispielbild 2">
+
+        <div id="teaser-content">
+            <p id="teaser-text">Es gibt im Moment in diese Mannschaft, oh einige Spieler!</p>
+            <button id="teaser-button" aria-label="Mehr &uuml;ber die Mannschaft lesen">Mehr lesen</button>
         </div>
     </div>
-
-    <!-- left column -->
-    <div class="row">
-        <main class="column-xs-12 column-s-12 column-m-12 column-t-7 column-l-7 column-xl-7" role="main">
-            <h2 id="headline" role="heading">LONG HEADLINETEXT /</h2>
-
-            <p>
-                Es gibt im Moment in diese Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich
-                lese
-                nicht sehr viele Zeitungen, aber ich habe geh&ouml;rt viele Situationen. Erstens: wir haben nicht
-                offensiv
-                gespielt. Es gibt keine deutsche Mannschaft spielt offensiv und die Name offensiv wie Bayern.</p>
-            <br>
-
-            <p>Letzte Spiel hatten wir in Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir m&uuml;ssen nicht
-                vergessen Zickler. Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese W&ouml;rter, ist
-                m&ouml;glich verstehen, was ich hab gesagt? Danke.</p>
-
-            <div class="row">
-                <div class="column-3"></div>
-                <div class="column-6">
-                    <hr>
-                </div>
-                <div class="column-3 rm-responsive"></div>
-            </div>
-            <div class="row">
-                <div class="column-2 rm-responsive"></div>
-                <div class="column-8">
-                    <p class="quote">&#8222;Ein Trainer ist nicht ein Idiot! Ein Trainer sei sehen was passieren in
-                        Platz.&#8220; -
-                        Trapattoni '98
-                    </p>
-                </div>
-                <div class="column-2 rm-responsive"></div>
-            </div>
-            <div class="row">
-                <div class="column-3 rm-responsive"></div>
-                <div class="column-6">
-                    <hr>
-                </div>
-                <div class="column-3"></div>
-            </div>
-
-            <p>Offensiv, offensiv ist wie machen wir in Platz. Zweitens: ich habe erkl&auml;rt mit diese zwei Spieler:
-                nach Dortmund brauchen vielleicht Halbzeit Pause. Ich habe auch andere Mannschaften gesehen in
-                Europa nach diese Mittwoch. Ich habe gesehen auch zwei Tage die Training.</p>
-
-            <div id="article-image">
-                <img id="inner-image" src="img/opera_house.png" alt="Beispielbild 1" title="Beispielbild 1">
-
-                <p id="image-copyright">&copy; Lorempixel.com</p>
-            </div>
-            <p id="after-image">Ich habe fertig! . . . wenn es gab Fragen, ich kann Worte wiederholen. . . Es gibt
-                im Moment
-                in
-                diese
-                Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich lese nicht sehr viele
-                Zeitungen, aber ich habe geh&ouml;rt viele Situationen. Erstens: wir haben nicht offensiv
-                gespielt.
-                Es
-                gibt keine <a href="#">deutsche Mannschaft</a> spielt offensiv und die Name offensiv wie
-                Bayern. Letzte
-                Spiel
-                hatten
-                wir in Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir m&uuml;ssen nicht vergessen
-                Zickler.
-                Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese W&ouml;rter, ist
-                W&ouml;rter, ist m&ouml;glich verstehen, was ich hab gesagt? Danke. Offensiv, offensiv ist wie machen
-                wir
-                in
-                Platz. Zweitens: ich habe erkl&auml;rt mit diese zwei Spieler: nach Dortmund brauchen vielleicht
-                Halbzeit
-                Pause. Ich habe auch andere Mannschaften gesehen in Europa nach diese Mittwoch.
-            </p>
-            <br>
-
-            <section>
-                <h2 id="formular">FORMULAR /</h2>
-                <hr>
-                <br>
-
-                <div class="row">
-                    <div class="column-l-2 column-xl-4 rm-responsive rm-m-responsive rm-t-responsive"></div>
-                    <div class="column-xs-12 column-s-12 column-m-12 column-l-9 column-xl-7">
-                        <p class="mandatory-alert">Felder mit einem <span class="mandatory">*</span> sind Pflichtfelder.
-                        </p>
-                        <a href="#" class="alert">Fehlermeldung</a>
-                    </div>
-                    <div class="rm-responsive rm-m-responsive rm-t-responsive rm-l-responsive rm-xl-responsive"></div>
-                </div>
-                <form action="#0">
-                    <div class="row">
-                        <div class="column-l-2 rm-responsive rm-m-responsive rm-t-responsive rm-xl-responsive"></div>
-                        <div class="column-xs-12 column-s-9 column-m-7 column-t-10 column-l-7 column-xl-11 block">
-                            <ul class="input-elements">
-                                <li class="input-wrapper">
-                                    <label for="name">Name<abbr class="mandatory"
-                                                                title="Hier ist ein Pflichtfeld" aria-label="Pflichtfeld Name">*</abbr></label>
-                                    <input required type="text" id="name" name="name" class="text-fields"
-                                           title="Geben Sie nur Buchstaben ein - z.B. Max Mustermann"
-                                           pattern="^[a-zA-ZäöüßÄÖÜ ]+$">
-                                </li>
-                                <li class="input-wrapper">
-                                    <label for="email">E-Mail<abbr class="mandatory"
-                                                                   title="Hier ist ein Pflichtfeld" aria-label="Pflichtfeld Email">*</abbr></label>
-                                    <input required type="email" id="email" name="email" class="text-fields"
-                                           title="Geben Sie nur eine g&uuml;ltige E-Mail Adresse ein - z.B. abc@xyz.de"
-                                           pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$">
-                                </li>
-                                <li class="input-wrapper">
-                                    <label for="telephone">Telefon</label>
-                                    <input type="tel" id="telephone" name="telephone" class="text-fields" pattern="\d+"
-                                           title="Geben Sie nur Zahlen ein - z.B. 0301234567">
-                                </li>
-                                <li class="input-wrapper">
-                                    <label for="commentary">Kommentar<abbr class="mandatory"
-                                                                           title="Hier ist ein Pflichtfeld" aria-label="Pflichtfeld Kommentar">*</abbr></label>
-                                    <textarea id="commentary" name="commentary" maxlength="500" class="commentary-field"
-                                              required></textarea>
-                                </li>
-                                <li id="submit-button-wrapper" class="input-wrapper">
-                                    <button type="submit" id="submit-button">Abschicken</button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </form>
-                <br>
-            </section>
-
-            <section class="row">
-                <h2>LEISTUNGSUMFANG /</h2>
-                <hr>
-                <div class="column-s-4 column-m-4 column-t-4 column-l-4 column-xl-4 leistungsumfang">
-                    <p>1. Lorem</p>
-
-                    <p>2. Ipsum</p>
-
-                    <p>3. Dolor</p>
-
-                    <p>4. Sit</p>
-                </div>
-                <div class="column-s-8 column-m-8 column-t-8 column-l-8 column-xl-4 leistungsumfang">
-                    <p>Exozet: GmbH</p>
-
-                    <p>Mitarbeiter: ca.150</p>
-
-                    <p>Groups: Games, Interact, Effects</p>
-
-                    <p>Gr&uuml;ndung: 1996</p>
-                </div>
-            </section>
-        </main>
-
-        <div class="column-t-1 column-l-1 column-xl-1 rm-responsive  rm-m-responsive"></div>
-
-        <!-- right column - sidebar  -->
-        <aside class="column-s-12 column-t-4 column-l-4 column-xl-4">
-            <h4>Interne Linkliste</h4>
-            <hr class="sidebar-hr">
-            <ul id="intern-link-list">
-                <li class="intern-list"><a href="#" aria-label="Zu Link nummer eins"> Link Nummer
-                    1</a></li>
-                <li class="intern-list"><a href="#" aria-label="Zu Link nummer zwei"> Link Nummer
-                    2</a></li>
-                <li class="intern-list"><a href="#" aria-label="Zu Link nummer drei"> Link Nummer
-                    3</a></li>
-            </ul>
-            <br>
-            <h4 id="kontakt">Kontakt</h4>
-            <hr class="sidebar-hr">
-            <div class="sidebar-content">
-                <p>Exozet Berlin GmbH</p>
-
-                <p>Platz der Luftbr&uuml;cke 4-6</p>
-
-                <p>12101 Berlin</p>
-                <br>
-
-                <p><i class="fa fa-phone" aria-hidden="true"></i> Tel.: +49 (0)30 24 65 60 - 0</p>
-
-                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> E-Mail: <a class="mail"
-                                                                                  href="mailto:info@exozet.com">info@exozet.com</a>
-                </p>
-            </div>
-            <br>
-            <h4>Image Teaser</h4>
-            <hr class="sidebar-hr">
-            <div id="teaser-frame">
-                <img id="teaser-image" src="img/ipad_logo.png" alt="Beispielbild 2" title="Beispielbild 2">
-
-                <div id="teaser-content">
-                    <p id="teaser-text">Es gibt im Moment in diese Mannschaft, oh einige Spieler!</p>
-                    <button id="teaser-button" aria-label="Mehr &uuml;ber die Mannschaft lesen">Mehr lesen</button>
-                </div>
-            </div>
-        </aside>
-    </div>
+</aside>
+</div>
 </div>
 <hr>
 <footer class="wrapper">
@@ -235,7 +255,8 @@
             <p class="exozet-footer">&copy; exozet 2014</p>
         </div>
         <div class="column-4 column-m-12 exozet-footer-links" role="menu">
-            <span class="footer-links right-element"><a href="#" aria-label="Zu News gelangen" role="menuitem">News</a> | <a href="#kontakt" aria-label="Zu Kontakt gelangen" role="menuitem">Kontakt | </a><a
+            <span class="footer-links right-element"><a href="#" aria-label="Zu News gelangen" role="menuitem">News</a> | <a
+                    href="#kontakt" aria-label="Zu Kontakt gelangen" role="menuitem">Kontakt | </a><a
                     href="#" aria-label="Zu Impressum gelangen" role="menuitem">Impressum</a></span>
         </div>
         <div class="done rm-responsive"></div>

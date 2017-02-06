@@ -1,0 +1,662 @@
+// responsive design media queries
+@media only screen and (min-width: 30em) {
+  .wrapper {
+    width: 100%;
+    max-width: 65em;
+  }
+
+  .column-1 {
+    width: 8.33333%;
+  }
+  .column-2 {
+    width: 16.66667%;
+  }
+  .column-3 {
+    width: 25%;
+  }
+  .column-4 {
+    width: 33.33333%;
+  }
+  .column-5 {
+    width: 41.66667%;
+  }
+  .column-6 {
+    width: 50%;
+  }
+  .column-7 {
+    width: 58.33333%;
+  }
+  .column-8 {
+    width: 66.66667%;
+  }
+  .column-9 {
+    width: 75%;
+  }
+  .column-10 {
+    width: 83.33333%;
+  }
+  .column-11 {
+    width: 91.66667%;
+  }
+  .column-12 {
+    width: 100%;
+  }
+}
+
+// responsive design for extra-small viewport(<=320px) e.g. iPhone5
+@media screen and (max-width: 320px) {
+  // smaller exozet logo and navigation menu font size
+  #header-logo {
+    width: 60px !important;
+    padding-top: 15px !important;
+  }
+
+  ul.navigation {
+    > li {
+      > a {
+        font-size: 8pt !important;
+        padding: 14px 6px !important;
+      }
+    }
+  }
+
+  // smaller h2 text
+  h2 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 0.5;
+    letter-spacing: 1px;
+    font-size: 15pt;
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+
+  // less whitespace for quote, remove these classes in general
+  // margin-bottom of formular
+  .rm-responsive {
+    display: none;
+  }
+
+  // article image has no float, make it centered instead
+  #article-image, #inner-image, p#image-copyright {
+    display: block;
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: inherit !important;
+  }
+
+  #after-image {
+    margin-top: 10px;
+  }
+
+  p#image-copyright {
+    text-align: center;
+  }
+
+  .mandatory-alert {
+    font-size: 10pt;
+  }
+
+  // resize elements in form
+  .block label {
+    text-align: left !important;
+  }
+
+  .input-wrapper {
+    display: block !important;
+
+    > input.text-fields, textarea.commentary-field {
+      margin-left: inherit !important;
+      width: 100% !important;
+    }
+  }
+
+  // make image and button in image teaser smaller
+  #teaser-frame {
+    height: inherit !important;
+  }
+
+  // footer
+  .exozet-footer, span.footer-links {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+    text-align: center;
+  }
+
+  span.footer-links {
+    > * {
+      font-size: 18px;
+      padding-top: 0;
+    }
+  }
+
+  .exozet-footer {
+    padding-bottom: 5px;
+  }
+  .exozet-footer-links {
+    padding-top: 0;
+  }
+  .column-xs-1 {
+    width: 8.33333%;
+  }
+  .column-xs-2 {
+    width: 16.66667%;
+  }
+  .column-xs-3 {
+    width: 25%;
+  }
+  .column-xs-4 {
+    width: 33.33333%;
+  }
+  .column-xs-5 {
+    width: 41.66667%;
+  }
+  .column-xs-6 {
+    width: 50%;
+  }
+  .column-xs-7 {
+    width: 58.33333%;
+  }
+  .column-xs-8 {
+    width: 66.66667%;
+  }
+  .column-xs-9 {
+    width: 75%;
+  }
+  .column-xs-10 {
+    width: 83.33333%;
+  }
+  .column-xs-11 {
+    width: 91.66667%;
+  }
+  .column-xs-12 {
+    width: 100%;
+  }
+}
+
+// responsive design for small device (<=479px)
+@media screen and (min-width: 321px) and (max-width: 479px) {
+  #header-logo {
+    width: 65px !important;
+    padding-top: 15px !important;
+  }
+
+  h2 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 0.5;
+    letter-spacing: 1px;
+    font-size: 12pt;
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+
+  ul.navigation {
+    > li {
+      > a {
+        font-size: 10pt !important;
+        padding: 14px 5px !important;
+      }
+    }
+  }
+
+  .column-s-1 {
+    width: 8.33333%;
+  }
+  .column-s-2 {
+    width: 16.66667%;
+  }
+  .column-s-3 {
+    width: 25%;
+  }
+  .column-s-4 {
+    width: 33.33333%;
+  }
+  .column-s-5 {
+    width: 41.66667%;
+  }
+  .column-s-6 {
+    width: 50%;
+  }
+  .column-s-7 {
+    width: 58.33333%;
+  }
+  .column-s-8 {
+    width: 66.66667%;
+  }
+  .column-s-9 {
+    width: 75%;
+  }
+  .column-s-10 {
+    width: 83.33333%;
+  }
+  .column-s-11 {
+    width: 91.66667%;
+  }
+  .column-s-12 {
+    width: 100%;
+  }
+
+  #submit-button {
+    float: right !important;
+  }
+
+  .leistungsumfang {
+    font-size: 11pt !important;
+  }
+
+  .rm-responsive {
+    display: none;
+  }
+
+  // article image has no float, make it centered instead
+  #article-image, #inner-image, p#image-copyright {
+    display: block;
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: inherit !important;
+  }
+
+  #after-image {
+    margin-top: 10px;
+  }
+
+  p#image-copyright {
+    text-align: center;
+    padding-top: initial !important;
+    padding-bottom: initial !important;
+  }
+
+  .block label {
+    text-align: left !important;
+  }
+
+  .input-wrapper {
+    display: block !important;
+    -webkit-box-sizing: border-box !important; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box !important; /* Firefox, other Gecko */
+    box-sizing: border-box !important;
+
+    input.text-fields {
+      margin-left: inherit !important;
+      width: 100% !important;
+      max-width: 20em !important;
+    }
+
+    textarea {
+      float: left !important;
+      margin-left: inherit !important;
+      width: 100% !important;
+      max-width: 21em !important;
+    }
+  }
+
+  // make image and button in image teaser smaller
+  #teaser-frame {
+    height: inherit !important;
+  }
+
+  // footer
+  .exozet-footer, span.footer-links {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+    text-align: center;
+  }
+
+  span.footer-links {
+    > * {
+      font-size: 18px;
+      padding-top: 0;
+    }
+  }
+
+  .exozet-footer {
+    padding-bottom: 5px;
+  }
+  .exozet-footer-links {
+    padding-top: 0;
+  }
+}
+
+// responsive design for phablet (<=600px)
+@media screen and (min-width: 480px) and (max-width: 600px) {
+  #header-logo {
+    width: 100px !important;
+    padding-top: 13px !important;
+  }
+
+  .rm-m-responsive {
+    display: none;
+  }
+
+  .column-m-1 {
+    width: 8.33333%;
+  }
+  .column-m-2 {
+    width: 16.66667%;
+  }
+  .column-m-3 {
+    width: 25%;
+  }
+  .column-m-4 {
+    width: 33.33333%;
+  }
+  .column-m-5 {
+    width: 41.66667%;
+  }
+  .column-m-6 {
+    width: 50%;
+  }
+  .column-m-7 {
+    width: 58.33333%;
+  }
+  .column-m-8 {
+    width: 66.66667%;
+  }
+  .column-m-9 {
+    width: 75%;
+  }
+  .column-m-10 {
+    width: 83.33333%;
+  }
+  .column-m-11 {
+    width: 91.66667%;
+  }
+  .column-m-12 {
+    width: 100%;
+  }
+
+  .block label {
+    text-align: left !important;
+  }
+
+  .input-wrapper {
+    display: block !important;
+    float: left !important;
+    -webkit-box-sizing: border-box !important; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box !important; /* Firefox, other Gecko */
+    box-sizing: border-box !important;
+
+    input.text-fields {
+      margin-left: inherit !important;
+      width: 100% !important;
+      max-width: 20em !important;
+    }
+
+    textarea {
+      margin-left: inherit !important;
+      width: 100% !important;
+      max-width: 21em !important;
+    }
+  }
+
+  #submit-button-wrapper {
+    float: right !important;
+  }
+
+  // make image and button in image teaser smaller
+  #teaser-frame {
+    height: inherit !important;
+  }
+
+  // footer
+  .exozet-footer, span.footer-links {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+    text-align: center;
+  }
+
+  span.footer-links {
+    > * {
+      font-size: 18px;
+      padding-top: 0;
+    }
+  }
+
+  .exozet-footer {
+    padding-bottom: 5px;
+  }
+  .exozet-footer-links {
+    padding-top: 0;
+  }
+}
+
+// responsive design for tablet (<=768px)
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .rm-t-responsive {
+    display: none;
+  }
+
+  .column-t-1 {
+    width: 8.33333%;
+  }
+  .column-t-2 {
+    width: 16.66667%;
+  }
+  .column-t-3 {
+    width: 25%;
+  }
+  .column-t-4 {
+    width: 33.33333%;
+  }
+  .column-t-5 {
+    width: 41.66667%;
+  }
+  .column-t-6 {
+    width: 50%;
+  }
+  .column-t-7 {
+    width: 58.33333%;
+  }
+  .column-t-8 {
+    width: 66.66667%;
+  }
+  .column-t-9 {
+    width: 75%;
+  }
+  .column-t-10 {
+    width: 83.33333%;
+  }
+  .column-t-11 {
+    width: 91.66667%;
+  }
+  .column-t-12 {
+    width: 100%;
+  }
+
+  .block label {
+    text-align: left !important;
+  }
+
+  .input-wrapper {
+    display: block !important;
+    -webkit-box-sizing: border-box !important; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box !important; /* Firefox, other Gecko */
+    box-sizing: border-box !important;
+
+    input.text-fields {
+      margin-left: inherit !important;
+      width: 100% !important;
+      max-width: 20em !important;
+    }
+
+    textarea {
+      float: left !important;
+      margin-left: inherit !important;
+      width: 100% !important;
+      max-width: 21em !important;
+    }
+  }
+
+  // article image has no float, make it centered instead
+  #article-image, #inner-image, p#image-copyright {
+    display: block;
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: inherit !important;
+  }
+
+  p#image-copyright {
+    margin-top: 10px;
+  }
+
+  .sidebar-content {
+    font-size: 9pt;
+  }
+
+  #teaser-text {
+    font-size: 10pt;
+    margin-bottom: 5px;
+  }
+
+  p.quote {
+    font-size: 10pt !important;
+  }
+}
+
+// responsive design for desktop (768px<x<1060px)
+@media screen and (min-width: 769px) and (max-width: 1060px) {
+  .rm-l-responsive {
+    display: none;
+  }
+
+  .column-l-1 {
+    width: 8.33333%;
+  }
+
+  .column-l-2 {
+    width: 16.66667%;
+  }
+
+  .column-l-3 {
+    width: 25%;
+  }
+
+  .column-l-4 {
+    width: 33.33333%;
+  }
+
+  .column-l-5 {
+    width: 41.66667%;
+  }
+
+  .column-l-6 {
+    width: 50%;
+  }
+
+  .column-l-7 {
+    width: 58.33333%;
+  }
+
+  .column-l-8 {
+    width: 66.66667%;
+  }
+
+  .column-l-9 {
+    width: 75%;
+  }
+
+  .column-l-10 {
+    width: 83.33333%;
+  }
+
+  .column-l-11 {
+    width: 91.66667%;
+  }
+
+  .column-l-12 {
+    width: 100%;
+  }
+
+  // make image and button in image teaser smaller
+  #teaser-frame {
+    height: inherit !important;
+  }
+
+  .block label {
+    text-align: left !important;
+  }
+
+  .input-wrapper {
+    display: block !important;
+    float: left !important;
+    -webkit-box-sizing: border-box !important; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box !important; /* Firefox, other Gecko */
+    box-sizing: border-box !important;
+
+    input.text-fields {
+      margin-left: inherit !important;
+      width: 100% !important;
+      max-width: 20em !important;
+    }
+
+    textarea {
+      margin-left: inherit !important;
+      width: 100% !important;
+      max-width: 21em !important;
+    }
+  }
+
+  #submit-button-wrapper {
+    float: right !important;
+  }
+}
+
+// responsive design for large viewport (>1060)
+@media screen and (min-width: 1061px) {
+  .rm-xl-responsive {
+    display: none;
+  }
+
+  .column-xl-1 {
+    width: 8.33333%;
+  }
+  .column-xl-2 {
+    width: 16.66667%;
+  }
+  .column-xl-3 {
+    width: 25%;
+  }
+  .column-xl-4 {
+    width: 33.33333%;
+  }
+  .column-xl-5 {
+    width: 41.66667%;
+  }
+  .column-xl-6 {
+    width: 50%;
+  }
+  .column-xl-7 {
+    width: 58.33333%;
+  }
+  .column-xl-8 {
+    width: 66.66667%;
+  }
+  .column-xl-9 {
+    width: 75%;
+  }
+  .column-xl-10 {
+    width: 83.33333%;
+  }
+  .column-xl-11 {
+    width: 91.66667%;
+  }
+  .column-xl-12 {
+    width: 100%;
+  }
+  #teaser-frame {
+    height: inherit !important;
+  }
+}

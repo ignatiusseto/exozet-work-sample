@@ -36,7 +36,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 src: ['dev/**/*.js'],
-                dest: 'dist/js/main.js'
+                dest: 'dev/js/main.js'
             }
         },
         cssmin: {

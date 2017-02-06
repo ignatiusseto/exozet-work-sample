@@ -1,6 +1,6 @@
 **Exozet Frontend Challenge – HTML/CSS/JS**
 
-Das Ergebnis der Frontend Challenge kann auf [ignatiusseto.com/probearbeit/exozet](ignatiusseto.com/probearbeit/exozet) aufgerufen werden.  
+Das Ergebnis der Frontend Challenge kann auf http://www.ignatiusseto.com/probearbeit/exozet aufgerufen werden.  
 
 
 Einige Bemerkungen:
